@@ -1,5 +1,5 @@
 <p align="center">
-	<img src=[![logo.png](https://i.postimg.cc/VLTRqVvW/logo.png)](https://postimg.cc/JGNZmKbs) />
+	[![logo.png](https://i.postimg.cc/VLTRqVvW/logo.png)](https://postimg.cc/JGNZmKbs)
                                                                                                                                       
 <p align="center">CoolRune is a modified variant of Artix with enchanced performance, privacy and productivity.
 
