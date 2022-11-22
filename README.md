@@ -28,7 +28,7 @@ AUR and Flatpack support.
 ## CoolRune Variants
 CoolRune-Nvidia: https://mega.nz/folder/Uf8mBDxY#3Ott6thjX5PLjm5_rukDaQ
   
-CoolRune-AMD:      
+CoolRune-AMD: https://mega.nz/folder/weE1HDqI#edvuWbjX6qcr--EiGdEsSw      
 
 The password to each is "password"
   
@@ -46,4 +46,5 @@ Paypal: https://tinyurl.com/yc78yen4
 
 My Website: https://greenlightsuccess.webflow.io
 
-Element: doctorjuliankintobor:matrix.org
+Element Server: https://matrix.to/#/#coolrune-linux:matrix.org
+
