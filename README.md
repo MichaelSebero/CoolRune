@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/MAINTAINED-YES-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/LICENSE-GPL-blue?style=for-the-badge">
+<p align="center"># CoolRune
                                                                                                                                       
 <p align="center">CoolRune is a modified variant of Artix with enchanced performance, privacy and productivity.
 
@@ -26,22 +24,20 @@ A system hardness rating of 70.
 AUR and Flatpack support.
   
 ## CoolRune Variants
-CoolRune-Nvidia: https://mega.nz/folder/ROFy0S7L#PsxzrN2DIwsRnYMb-7ESFg
+CoolRune-Nvidia: https://mega.nz/folder/Uf8mBDxY#3Ott6thjX5PLjm5_rukDaQ
   
-CoolRune-Intel:
-  
-CoolRune-AMD:     
+CoolRune-AMD:      
 
 The password to each is "password"
   
 ## How to install CoolRune
 Install one of the variants to an external storage device.
 
-Flash Clonezilla to a USB.
+Flash Rescuezilla to a USB.
 
-Plug in the USB and the external storage device. 
+Boot into Rescuezilla, plug in the external storage device and select the restore option in Rescuezilla.
 
-Follow this tutorial https://youtube.com/watch?v=VGVJDrwTWu8
+Select the storage device which has CoolRune on it and install the operating system on the drive of your choosing.
   
 ## Donations and Contacts
 Paypal: https://tinyurl.com/yc78yen4
