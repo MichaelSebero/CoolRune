@@ -36,13 +36,16 @@
 
  - Follow these steps first -
  
- . If your internet connection is wireless, connect with [ Network Configuration ] to gain internet access.
+ . If your internet connection is wireless, in the terminal type [ nmcli dev wifi list ] find your SSID and enter 
+   [ nmcli dev wifi con "YOUR SSID" password ( YOUR WIFI PASSWORD ) > no brackets ] to gain internet access.
+
+ . Resize the storage space with [ GParted ] to merge unallocated storage.
 
  . In the terminal type [ doas pacan -Syyu ] to update system.
 
- . If you want to change your username, use [ Change Username ] and to change the default password enter [ passwd ] into the terminal.
-
- . Resize the storage space with [ GParted ] to merge unallocated storage.
+ . If you want to change your username, use [ Change Username ] and to change the default password type [ passwd ] into the terminal.
+ 
+ . To change the root password type [ su ] into the terminal and then [ passwd ] to change the password.
 
  . If you want to remove or change the startup sound find startup applications and either disable it or change the sound by going into
    /-CoolRune-/System_Sounds and replacing Login.wav.
