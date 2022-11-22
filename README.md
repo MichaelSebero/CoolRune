@@ -1,7 +1,8 @@
 <p align="center">
-	[![logo.png](https://i.postimg.cc/VLTRqVvW/logo.png)](https://postimg.cc/JGNZmKbs)
+	<img src="https://i.postimg.cc/VLTRqVvW/logo.png" />
                                                                                                                                       
-<p align="center">CoolRune is a modified variant of Artix with enchanced performance, privacy and productivity.
+<p align="center">
+	## CoolRune is a modified variant of Artix with enchanced performance, privacy and productivity.
 
 ## Features	 
 A visually appealing XFCE desktop enviroment.
