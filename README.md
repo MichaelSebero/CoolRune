@@ -1,4 +1,4 @@
-<p align="center"> # CoolRune
+ src="https://raw.githubusercontent.com/CoolRune/logo.png
                                                                                                                                       
 <p align="center">CoolRune is a modified variant of Artix with enchanced performance, privacy and productivity.
 
