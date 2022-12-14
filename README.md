@@ -19,7 +19,7 @@ The s6 init system.
   
 Productivity features and tools.
 
-A custom version of Librewolf which is more secure and lighter than Brave.
+A custom version of LibreWolf that's more secure and lighter than Brave.
   
 Stability tweaks.
   
@@ -28,9 +28,9 @@ A system hardness rating of 70.
 AUR and Flatpack support.
   
 ## CoolRune Variants
-CoolRune-Nvidia: https://mega.nz/folder/sbMlAZwb#PPErOV-1TvHdwPSWQpZyGQ
+CoolRune-Nvidia: https://mega.nz/folder/uk0zFCxL#YI1yE_SPxttT83yfGTmgnw
   
-CoolRune-AMD: https://mega.nz/folder/hXkz3SbY#pIEJuR8q8VNXH3RsjYFYcw     
+CoolRune-AMD: https://mega.nz/folder/3Yd3BBBC#PTw1TmDlFbtYGHljzJQFwg    
 
 The password to each is "password"
   
