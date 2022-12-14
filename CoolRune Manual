@@ -89,7 +89,7 @@
  
  - CoolRune comes with a customized LibreWolf instance which is tweaked to have maximum security.
  
- - The customized Librewolf instance can accept passwords from Chrome.
+ - The customized LibreWolf instance can accept passwords from Chrome.
  
  - If website authentication bugs out disable the User-Agent Switcher temporarily.
  
