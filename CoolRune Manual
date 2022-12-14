@@ -77,7 +77,7 @@
  
  - You can still use sudo commands with this operating system.
   
- - Doas finishes commands quicker.
+ - [ doas ] finishes commands quicker than [ sudo ] but you might need [ sudo ] for other commands.
  
  - Change shaders to Vulkan in Steam settings and enable Steam Play for Linux compatibility.
  
@@ -99,7 +99,7 @@
  
  - If the website or the API is down for Searx use Yandex.
     
- - Don't change the computer name from [ user ], it'll break some confgurations made by CoolRune.
+ - Don't change the computer name from [ user ], it'll break some configurations made by CoolRune.
  
  - !!! TRY TO ONLY UPDATE ONCE A WEEK FOR STABILITY !!!
 
@@ -168,7 +168,7 @@
  
 ..................................................................................................................................................
 
- / HOW TO ACESS ADMIN FILE MANAGER /
+ / HOW TO ACCESS ADMIN FILE MANAGER /
 
  sudo pcmanfm
 
@@ -607,7 +607,7 @@
 
  . Flash Artix XFCE s6 on a flashdrive.
 
- . Boot into live enviroment but don't install a new instance.
+ . Boot into live environment but don't install a new instance.
 
  . Connect to the internet in the top right if you have a Wi-Fi reciever.
 
@@ -617,7 +617,7 @@
 
  . Open a terminal and type ( sudo artix-chroot [ DIRECTORY ] )
 
- . Apply whatever fix you find online through this enviroment.
+ . Apply whatever fix you find online through this environment.
  
  . Sometimes ( sudo pacman -Syu ) fixes things.
 
