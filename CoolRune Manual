@@ -39,14 +39,8 @@
  . If your internet connection is wireless, in the terminal type [ nmcli dev wifi list ] find your SSID and enter 
    [ nmcli dev wifi con "YOUR SSID" password ( YOUR WIFI PASSWORD ) > no brackets ] to gain internet access.
 
- . Resize the storage space with [ GParted ] to merge unallocated storage.
-
- . In the terminal type [ doas pacan -Syyu ] to update system.
-
- . If you want to change your username, use [ Change Username ] and to change the default password type [ passwd ] into the terminal.
+ . In the terminal type [ doas pacman -Syyu ] to update system.
  
- . To change the root password type [ su ] into the terminal and then [ passwd ] to change the password.
-
  . If you want to remove or change the startup sound find startup applications and either disable it or change the sound by going into
    /-CoolRune-/System_Sounds and replacing Login.wav.
 
@@ -98,9 +92,7 @@
  - Yandex is a useful search engine for finding alternative information.
  
  - If the website or the API is down for Searx use Yandex.
-    
- - Don't change the computer name from [ user ], it'll break some configurations made by CoolRune.
- 
+     
  - !!! TRY TO ONLY UPDATE ONCE A WEEK FOR STABILITY !!!
 
 ..................................................................................................................................................
