@@ -38,10 +38,8 @@
  
  . If your internet connection is wireless, in the terminal type [ nmcli dev wifi list ] find your SSID and enter 
    [ nmcli dev wifi con "YOUR SSID" password ( YOUR WIFI PASSWORD ) > no brackets ] to gain internet access.
-
- . In the terminal type [ doas pacman -Syyu ] to update system.
  
- . If you want to remove or change the startup sound find startup applications and either disable it or change the sound by going into
+ . To remove or change the startup sound find startup applications and either disable it or change the sound by going into
    /-CoolRune-/System_Sounds and replacing Login.wav.
 
 ..................................................................................................................................................
