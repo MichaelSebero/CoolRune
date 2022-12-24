@@ -28,20 +28,9 @@ A system hardness rating of 70.
 AUR and Flatpack support.
   
 ## CoolRune Variants
-CoolRune-Nvidia: https://mega.nz/folder/uk0zFCxL#YI1yE_SPxttT83yfGTmgnw
+CoolRune-Nvidia: https://github.com/MichaelSebero/CoolRune-NVIDIA
   
-CoolRune-AMD: https://mega.nz/folder/3Yd3BBBC#PTw1TmDlFbtYGHljzJQFwg    
-
-The password to each is "password"
-  
-## How to install CoolRune
-Install one of the variants to an external storage device.
-
-Flash Rescuezilla to a USB.
-
-Boot into Rescuezilla, plug in the external storage device and select the restore option in Rescuezilla.
-
-Select the storage device which has CoolRune on it and install the operating system on the drive of your choosing.
+CoolRune-AMD: https://github.com/MichaelSebero/CoolRune-AMD   
   
 ## Donations and Contacts
 Paypal: https://tinyurl.com/yc78yen4
