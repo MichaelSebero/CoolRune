@@ -39,6 +39,16 @@
  . If your internet connection is wireless, in the terminal type [ nmcli dev wifi list ] find your SSID and enter 
    [ nmcli dev wifi con "YOUR SSID" password ( YOUR WIFI PASSWORD ) > no brackets ] to gain internet access.
  
+ . Run these commands.
+   
+   cd /Desktop
+   sh CoolRune-Files-Install.sh
+ 
+ . If you have an NVIDIA GPU run this command after.
+   
+   cd /Desktop
+   sh CoolRune-NVIDIA-Patch.sh
+ 
  . To remove or change the startup sound find startup applications and either disable it or change the sound by going into
    /-CoolRune-/System_Sounds and replacing Login.wav.
 
