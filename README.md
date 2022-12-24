@@ -28,7 +28,7 @@ A system hardness rating of 70.
 AUR and Flatpack support.
   
 ## CoolRune Variants
-CoolRune-Nvidia: https://github.com/MichaelSebero/CoolRune-NVIDIA
+CoolRune-NVIDIA: https://github.com/MichaelSebero/CoolRune-NVIDIA
   
 CoolRune-AMD: https://github.com/MichaelSebero/CoolRune-AMD   
   
