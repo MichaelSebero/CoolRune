@@ -30,7 +30,10 @@ AUR and Flatpack support.
 ## CoolRune Variants
 CoolRune-NVIDIA: https://github.com/MichaelSebero/CoolRune-NVIDIA
   
-CoolRune-AMD: https://github.com/MichaelSebero/CoolRune-AMD   
+CoolRune-AMD: https://github.com/MichaelSebero/CoolRune-AMD
+
+CoolRune-Intel: https://github.com/MichaelSebero/CoolRune-Intel
+
   
 ## Donations and Contacts
 Paypal: https://tinyurl.com/yc78yen4
