@@ -63,7 +63,7 @@
  
  - If website authentication bugs out disable the User-Agent Switcher temporarily.
  
- - Use the Invidious proxy for Youtube and Searx as a proxy for Google.
+ - Use the Invidious proxy for YouTube and Searx as a proxy for Google.
  
  - Yandex is a useful search engine for finding alternative information.
  
@@ -485,7 +485,7 @@
  
  nvidia-xconfig --cool-bits=8
  
- > Then use Nvidia Overclocker
+ > Then use GreenWithEnvy
  
 ..................................................................................................................................................
 
