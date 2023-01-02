@@ -305,11 +305,11 @@
 
 ..................................................................................................................................................
 
-> XFCE SUPERKEY
+ > XFCE SUPERKEY
 
-paru -S xfce-superkey-git
+ paru -S xfce-superkey-git
 
-> Now pressing the superkey will open up the whisker menu. The command must first be added to startup applications to work.
+ > Pressing the superkey will open up the whisker menu. The command must first be added to startup applications to work.
 
 ..................................................................................................................................................
 
