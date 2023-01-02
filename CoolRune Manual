@@ -44,10 +44,10 @@
  - All internet traffic is encrypted through [ dnscrypt-proxy ] which prevents DNS leaks.
  
  - CoolRune is a productivity and security oriented operating system, most pornographic and unsafe websites are blocked by default.
- 
- - You can still use sudo commands with this operating system.
   
  - [ doas ] finishes commands quicker than [ sudo ] but you might need [ sudo ] for other commands.
+ 
+ - You can still use sudo commands with this operating system.
  
  - Change shaders to Vulkan in Steam settings and enable Steam Play for Linux compatibility.
  
@@ -144,13 +144,13 @@
 
  / HOW TO INSTALL AUR FILES QUICKLY /
 
- yay -S [ FILE ]
+ paru -S [ FILE ]
 
 ..................................................................................................................................................
 
  / TO DELETE FILES AND PROGRAMS MANUALLY /
 
- yay -R [ FILE ]
+ paru -R [ FILE ]
 
  doas pacman -R [ FILE ]
 
@@ -285,15 +285,31 @@
 
  > MORE ADVANCED AUDIO SETTINGS
 
- yay -S alsa-tools 1.2.5-1
+ paru -S alsa-tools
 
 ..................................................................................................................................................
 
  > EXIFTOOL
 
- yay -S perl-image-exiftool 12.30-1
+ paru -S perl-image-exiftool
 
- > USED FOR EDITING AND VIEWING METADATA
+ > Used for editing and viewing metadata.
+
+..................................................................................................................................................
+
+ > AUDIO THUMBNAILER
+
+ paru -S ffmpeg-audio-thumbnailer
+
+ > Display album art.
+
+..................................................................................................................................................
+
+> XFCE SUPERKEY
+
+paru -S xfce-superkey-git
+
+> Now pressing the superkey will open up the whisker menu. The command must first be added to startup applications to work.
 
 ..................................................................................................................................................
 
