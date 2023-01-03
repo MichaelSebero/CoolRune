@@ -9,7 +9,7 @@ A visually appealing XFCE desktop enviroment.
 
 Gaming optimizations.
 
-Inbuilt tracker,ad blocking, security and privacy features.
+Inbuilt tracker, ad blocking, security and privacy features.
 
 The tkg-pds kernel.
 
