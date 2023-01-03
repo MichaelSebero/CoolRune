@@ -9,14 +9,12 @@ A visually appealing XFCE desktop enviroment.
 
 Gaming optimizations.
 
-Inbuilt tracker, ad blocking, security and privacy features.
+Inbuilt tracker,ad blocking, security and privacy features.
 
 The tkg-pds kernel.
 
 An easy to understand user manual.
-  
-The s6 init system.
-  
+    
 Productivity features and tools.
 
 A custom version of LibreWolf that's more secure and lighter than Brave.
