@@ -28,7 +28,7 @@ AUR and Flatpack support.
 ## Donations and Contacts
 Paypal: https://tinyurl.com/yc78yen4
 
-My Website: https://greenlightsuccess.webflow.io
+My website: https://greenlightsuccess.webflow.io
 
-Element Server: https://matrix.to/#/#coolrune-linux:matrix.org
+Element server: https://matrix.to/#/#coolrune-linux:matrix.org
 
