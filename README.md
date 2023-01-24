@@ -9,7 +9,7 @@ A visually appealing XFCE desktop enviroment.
 
 Gaming optimizations.
 
-Inbuilt tracker, ad blocking, security and privacy features.
+Inbuilt tracker blocking, ad blocking, pornography filtering and privacy features.
 
 The tkg-pds kernel.
 
@@ -27,8 +27,6 @@ A system hardness rating of 70.
 
 AUR and Flatpack support.
 	
-A built-in pornography / known unsafe websites blocker.
-
 Internet traffic encryption.
   
 ## Donations and Contacts
