@@ -20,14 +20,14 @@ An easy to understand user manual.
 Productivity features and tools.
 
 A custom version of LibreWolf that's more secure and lighter than Brave.
-  
-Built-in pornography blocker.
  
 Stability tweaks.
   
 A system hardness rating of 70.
 
 AUR and Flatpack support.
+	
+A Built-in pornography / known unsafe websites blocker.
 
 Internet traffic encryption.
   
