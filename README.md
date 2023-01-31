@@ -13,7 +13,7 @@ Inbuilt blocking of ads, trackers, pornography and known unsafe websites.
 
 The tkg-pds kernel.
 
-MAC Address randomization on login.
+MAC address randomization on login.
 
 An easy to understand user manual.
     
