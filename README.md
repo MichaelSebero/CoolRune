@@ -17,7 +17,7 @@ MAC address randomization on login.
 
 An easy to understand user manual.
     
-Productivity features and tools.
+All of the productivity tools from my GitHub.
 
 A custom version of LibreWolf that's more secure and lighter than Brave.
  
