@@ -30,9 +30,9 @@ AUR and Flatpack support.
 Internet traffic encryption.
   
 ## Donations and Contacts
-Paypal: https://tinyurl.com/yc78yen4
+PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
 
-My website: https://greenlightsuccess.webflow.io
+My Website: https://greenlightsuccess.webflow.io
 
-Element server: https://matrix.to/#/#coolrune-linux:matrix.org
+Element Server: https://matrix.to/#/#coolrune-linux:matrix.org
 
