@@ -2,7 +2,7 @@
 	<img src="https://i.postimg.cc/VLTRqVvW/logo.png" />
                                                                                                                                       
 <p align="center">
-	 CoolRune is a modified variant of Artix with enhanced performance, privacy and productivity.
+	 CoolRune is a Meta-Distribution of Artix Linux.
 
 ## Features	 
 A visually appealing XFCE desktop enviroment.
