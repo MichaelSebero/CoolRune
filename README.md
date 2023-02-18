@@ -5,7 +5,7 @@
 	 CoolRune is a Meta-Distribution of Artix Linux with enchanced performance, privacy and productivity.
 
 ## Features	 
-A visually appealing XFCE desktop enviroment.
+A visually appealing custom XFCE desktop enviroment.
 
 Gaming optimizations.
 
@@ -28,7 +28,15 @@ A system hardness rating of 70.
 AUR and Flatpack support.
 	
 Internet traffic encryption.
-  
+
+# How to install CoolRune
+
+. Install a fresh instance of Artix s6 XFCE. 
+
+. Look in releases and find which version matches your graphics card.
+
+. Curl the repo and run the script.
+
 ## Donations and Contacts
 PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
 
