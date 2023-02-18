@@ -35,8 +35,6 @@ Internet traffic encryption.
 
 . Look in releases and find which version matches your graphics card.
 
-. Curl the repo and run the script.
-
 ## Donations and Contacts
 PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
 
