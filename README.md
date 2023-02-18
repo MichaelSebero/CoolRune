@@ -29,7 +29,7 @@ AUR and Flatpack support.
 	
 Internet traffic encryption.
 
-# How to install CoolRune
+## How to install CoolRune
 
 . Install a fresh instance of Artix s6 XFCE. 
 
