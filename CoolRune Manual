@@ -41,13 +41,13 @@
  
  - If you have a wireless internet connection, look in Konsole for [ List Wi-Fi ] and [ Connect to Wi-Fi ] > follow the template provided by [ Connect to Wi-fI ]
  
- - To update your system run the command [ Update System ] found in Konsole.
+ - To update your system run the command [ Update System ] found in Konsole; if you don't use this specific command your system can break.  
  
  - If you want to update CoolRune to the newest version run the command [ Update CoolRune ] or [ Update CoolRune NVIDIA ] which is found in Konsole.
  
  - CoolRune uses an automatic MAC address changer upon login.
  
- - All internet traffic is encrypted through [ dnscrypt-proxy ] which prevents DNS leaks.
+ - All DNS traffic is encrypted through [ dnscrypt-proxy ] which prevents DNS leaks.
  
  - CoolRune is a productivity and security oriented operating system, most pornographic and unsafe websites are blocked by default.
   
@@ -60,8 +60,6 @@
  - Use [ GloriousEggroll ] which is provided with CoolRune as your proton prefix for Steam for increased FPS and stability.
  
  - To get more FPS in Steam copy and paste [ gamemoderun %command% ] in launch options which is found through properties.
- 
- - Keep resolution at 1920 x 1080 for maximum performance.
  
  - CoolRune comes with a customized LibreWolf instance which is tweaked to have maximum security.
  
@@ -321,14 +319,6 @@ doas pacman -Sc
  paru -S ffmpeg-audio-thumbnailer
 
  > Display album art.
-
-..................................................................................................................................................
-
- > XFCE SUPERKEY
-
- paru -S xfce-superkey-git
-
- > Pressing the superkey will open up the whisker menu. The command must first be added to startup applications to work.
 
 ..................................................................................................................................................
 
