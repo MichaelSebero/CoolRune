@@ -27,7 +27,9 @@ A system hardness rating of 70.
 
 AUR and Flatpack support.
 	
-Internet traffic encryption.
+DNS traffic encryption.
+
+Tiling for XFCE.
 
 ## How to install CoolRune
 
