@@ -41,9 +41,9 @@
  
  - If you have a wireless internet connection, look in Konsole for [ List Wi-Fi ] and [ Connect to Wi-Fi ] > follow the template provided by [ Connect to Wi-fI ]
  
- - To update your system run the command [ Update System ] found in Konsole; if you don't use this specific command your system can break.  
+ - To update your system run the command [ update ] if you don't use this specific command your system can break.  
  
- - If you want to update CoolRune to the newest version run the command [ Update CoolRune ] or [ Update CoolRune NVIDIA ] which is found in Konsole.
+ - If you want to update CoolRune to the newest version run the command [ update-coolrune] or [ update-coolrune-nvidia ]
  
  - CoolRune uses an automatic MAC address changer upon login.
  
@@ -106,7 +106,7 @@
 
  / UPDATE /
 
- doas pacman -Syyu && flatpak update && doas update-grub && tldr --update && doas freshclam
+ update
 
 ..................................................................................................................................................
 
