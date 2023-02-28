@@ -45,7 +45,7 @@
  
  - To update your system run the command [ update ] if you don't use this specific command your system can break.  
  
- - If you want to update CoolRune to the newest version run the command [ update-coolrune] or [ update-coolrune-nvidia ]
+ - If you want to update CoolRune to the newest version run the command [ update-coolrune ] or [ update-coolrune-nvidia ]
  
  - CoolRune uses an automatic MAC address changer upon login.
  
