@@ -564,6 +564,8 @@ doas pacman -Sc
 
 ..................................................................................................................................................
 
+ > The command [ fix-coolrune ] might fix your system.
+ 
  . If you have any issues go to [ https://wiki.artixlinux.org/Main/Troubleshooting ] 
  
  . Make a post on the Artix Linux forum at [ https://forum.artixlinux.org ]
