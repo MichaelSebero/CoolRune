@@ -21,7 +21,7 @@ All of the productivity tools from my GitHub.
 
 A custom version of LibreWolf that's more secure and lighter than Brave.
  
-Stability tweaks.
+System stability tweaks.
   
 A system hardness rating of 70.
 
@@ -29,7 +29,9 @@ AUR and Flatpack support.
 	
 DNS traffic encryption.
 
-Tiling for XFCE.
+The highest quality pulseaudio configuration.
+
+Windows like tiling for XFCE.
 
 ## How to install CoolRune
 
