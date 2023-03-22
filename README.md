@@ -29,7 +29,7 @@ AUR and Flatpack support.
 	
 DNS traffic encryption.
 
-The highest quality pulseaudio configuration.
+The highest quality PulseAudio configuration.
 
 Windows like tiling for XFCE.
 
