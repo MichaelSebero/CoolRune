@@ -31,7 +31,7 @@ DNS traffic encryption.
 
 The highest quality PulseAudio configuration.
 
-Windows like tiling for XFCE.
+Windows-like tiling for XFCE.
 
 <p align="center">
 	<img src="https://i.postimg.cc/13xcGjNt/1.png" />
