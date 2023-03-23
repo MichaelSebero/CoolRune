@@ -33,12 +33,6 @@ The highest quality PulseAudio configuration.
 
 Windows like tiling for XFCE.
 
-## How to install CoolRune
-
-. Install a fresh instance of Artix s6 XFCE. 
-
-. Look in releases and find which version matches your graphics card.
-
 <p align="center">
 	<img src="https://i.postimg.cc/13xcGjNt/1.png" />
 
