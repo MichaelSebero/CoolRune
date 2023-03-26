@@ -130,7 +130,7 @@
  
 ..................................................................................................................................................
 
- / INSTALL / UNINSTALL PYTHON MODULE /
+ / INSTALL AND UNINSTALL PYTHON MODULES /
 
  pip3 install [ MODULE ]
 
