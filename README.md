@@ -34,7 +34,7 @@ The highest quality PulseAudio configuration.
 Windows-like tiling for XFCE.
 
 <p align="center">
-	<img src="https://i.postimg.cc/13xcGjNt/1.png" />
+	<img src="https://i.postimg.cc/MTyq0wPd/Screenshot-from-2023-03-28-12-44-23.png" />
 
 ## Donations and Contacts
 PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
