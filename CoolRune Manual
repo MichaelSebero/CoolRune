@@ -332,7 +332,7 @@
 
  Some packages which rely on systemd and older packages won't work.
  
- Make sure the chaotic-aur repo is at the bottom for your /etc/pacman.conf file.
+ Make sure the chaotic-aur repo is at the bottom of your /etc/pacman.conf file.
 
  > Tools for penetration testing.
 
