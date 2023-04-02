@@ -1,19 +1,19 @@
-==================================================================================================================================================
+================================================================================================================================================== 
 
                                                                                                                              - COOLRUNE MANUAL ***
 
 ==================================================================================================================================================
 
-                      .,coxO.    .Okoc,.
-                  .ckNMMMMMM,    'MMMMMMNOc.
-                lXMMMMMMMMMM,    'MMMMMMMMMMXo
-                .dWMMMMMMMMM,    'MMMMMMMMMWd.
-           ..      oWMMMMMMM,    'MMMMMMMWd.     ..
-          cWMx.      oWMMMMM,    'MMMMMWo      .xMMl
-         dMMMMMk.      lNMMM,    'MMMNl      .kMMMMMx
-        dMMMMMMMMO.      cNM,    'MNl      .kMMMMMMMMx
-       ;MMMMMMMMMMMO'      c.    .c      'OMMMMMMMMMMM:
-       XMMMMMMMMMMMMM0,                '0MMMMMMMMMMMMMN
+                      .,coxO.    .Okoc,.                 
+                  .ckNMMMMMM,    'MMMMMMNOc.                
+                lXMMMMMMMMMM,    'MMMMMMMMMMXo             
+                .dWMMMMMMMMM,    'MMMMMMMMMWd.             
+           ..      oWMMMMMMM,    'MMMMMMMWd.     ..        
+          cWMx.      oWMMMMM,    'MMMMMWo      .xMMl        
+         dMMMMMk.      lNMMM,    'MMMNl      .kMMMMMx     
+        dMMMMMMMMO.      cNM,    'MNl      .kMMMMMMMMx     
+       ;MMMMMMMMMMMO'      c.    .c      'OMMMMMMMMMMM:    
+       XMMMMMMMMMMMMM0,                '0MMMMMMMMMMMMMN    
       .MMMMMMMMMMMMMMMMK,            ,0MMMMMMMMMMMMMMMM'
       :MMMMMMMMMMMMMMMMMMK;        ,KMMMMMMMMMMMMMMMMMMc
       :MMMMMMMMMMMMMMMMMMMMX.    .KMMMMMMMMMMMMMMMMMMMMc
@@ -38,47 +38,47 @@
 ..................................................................................................................................................
 
  - In Konsole there's a list of quick commands provided in [ - Commands - ]
-
- - If you have a wireless internet connection, look in Konsole for [ List Wi-Fi ] and [ Connect to Wi-Fi ]
-
+ 
+ - If you have a wireless internet connection, look in Konsole for [ List Wi-Fi ] and [ Connect to Wi-Fi ] 
+ 
  > Follow the template provided by [ Connect to Wi-fI ]
-
- - To update your system run the command [ update ] if you don't use this specific command your system can break.
-
+ 
+ - To update your system run the command [ update ] if you don't use this specific command your system can break.  
+ 
  - If you want to update CoolRune to the newest version run the command [ update-coolrune ] or [ update-coolrune-nvidia ]
-
+ 
  - CoolRune uses an automatic MAC address changer upon login.
-
+ 
  - All DNS traffic is encrypted through [ dnscrypt-proxy ] which prevents DNS leaks.
-
+ 
  - CoolRune is a productivity and security oriented operating system, most pornographic and unsafe websites are blocked by default.
-
+  
  - [ doas ] finishes commands quicker than [ sudo ] but you might need [ sudo ] for other commands.
-
+ 
  - You can still use sudo commands with this operating system.
-
+ 
  - Change shaders to Vulkan in Steam settings and enable Steam Play for Linux compatibility.
-
+ 
  - Use [ GloriousEggroll ] which is provided with CoolRune as your proton prefix for Steam.
-
+ 
  - To get more FPS for games copy and paste [ gamemoderun %command% ] in launch options which is found through properties in Steam.
-
+ 
  - The command [ game-focus ] kills your desktop enviroment and launches Steam in big picture mode.
-
+ 
  - CoolRune comes with a customized LibreWolf instance which is tweaked to have maximum security.
-
+ 
  - The customized LibreWolf instance can accept passwords from Chrome.
-
+ 
  - If website authentication bugs out disable the User-Agent Switcher temporarily.
-
+ 
  - Use the Invidious proxy for YouTube and Searx as a proxy for Google.
-
+ 
  - Yandex is a useful search engine for finding alternative information.
-
+ 
  - If the website or the API is down for Searx use Yandex.
 
  - You can tile applications by moving them to the middle left/right, bottom left/right and bottom middle corners.
-
+     
  - !!! TRY TO ONLY UPDATE ONCE A WEEK FOR STABILITY !!!
 
 ..................................................................................................................................................
@@ -100,18 +100,18 @@
 
  / SUPER USER /
 
- su
+ su 
 
 ..................................................................................................................................................
 
  / INSTALL PACKAGES /
-
+ 
  steal [ PACKAGE ]
 
 ..................................................................................................................................................
 
  / UNINSTALL PACKAGES /
-
+ 
  remove [ PACKAGE ]
 
 ..................................................................................................................................................
@@ -119,7 +119,7 @@
  / ROLLBACK PACKAGE /
 
  rollback [ PACKAGE ]
-
+ 
 ..................................................................................................................................................
 
  / UPDATE SYSTEM /
@@ -129,15 +129,15 @@
 ..................................................................................................................................................
 
  / CHANGE DIRECTORY /
-
+ 
  cd [ /EXAMPLE/EXAMPLE/ ]
-
+ 
 ..................................................................................................................................................
 
  / LOAD PYTHON SCRIPT /
-
+ 
  python3 [ FILE ]
-
+ 
 ..................................................................................................................................................
 
  / INSTALL AND UNINSTALL PYTHON MODULES /
@@ -149,15 +149,15 @@
 ..................................................................................................................................................
 
  / DEFINE COMMAND /
-
+ 
  tldr [ COMMAND ]
-
+ 
 ..................................................................................................................................................
 
  / FIX CORRUPTION /
-
+ 
  doas pacman -Syu --overwrite "*" $(pacman  -Qnq)
-
+ 
 ..................................................................................................................................................
 
  / ACCESS ADMIN FILE MANAGER /
@@ -175,39 +175,39 @@
 ..................................................................................................................................................
 
  / LIST ATTACHED DRIVES /
-
+ 
  lsblk
 
  - TO FIND UUID -
-
+ 
  lsblk -f
-
+ 
 ..................................................................................................................................................
 
- / VIEW COMPUTER SPECS /
-
+ / VIEW COMPUTER SPECS / 
+ 
  neofetch
-
+ 
 ..................................................................................................................................................
 
- / LIST MAC ADDRESSES AND NETWORK DEVICES /
+ / LIST MAC ADDRESSES AND NETWORK DEVICES / 
 
  ip link show
-
+   
 ..................................................................................................................................................
 
  / AUDIT SECURITY OF SYSTEM /
-
+ 
  sudo lynis audit system
-
+ 
 ..................................................................................................................................................
 
  / VIM /
-
+ 
  vim [ DIRECTORY TO CONFIG ]
-
+ 
  Type [ i ]
-
+ 
  When finished press [ ESC ] and then type [ :w + ENTER ]
 
 ..................................................................................................................................................
@@ -217,29 +217,29 @@
  s6-service add default [ SERVICE ]
 
  s6-db-reload
-
+ 
 ..................................................................................................................................................
 
  / LIST INSTALLED PACKAGES /
-
+ 
  doas pacman -Qe
-
+ 
 ..................................................................................................................................................
 
  / RELOAD S6 /
 
  s6-db-reload
-
+ 
 ..................................................................................................................................................
 
-==================================================================================================================================================
+================================================================================================================================================== 
 
 
 
 
 
 
-==================================================================================================================================================
+================================================================================================================================================== 
 
  - HOW TO INSTALL GITHUB FILES MANUALLY -
 
@@ -250,9 +250,9 @@
  - GITHUB DEFAULT INSTALLATION -
 
  . git clone ( URL )
-
+ 
  . cd ( FILE )
-
+ 
  . makepkg -sirc
 
 ..................................................................................................................................................
@@ -260,9 +260,9 @@
  - HOW TO INSTALL PYTHON PACKAGES FROM GITHUB -
 
  . git clone ( URL )
-
+ 
  . cd ( FILE )
-
+ 
  . doas pip3 install -e
 
 ..................................................................................................................................................
@@ -270,13 +270,13 @@
  - HOW TO INSTALL RUST PACKAGES FROM GITHUB -
 
  . git clone ( URL )
-
+ 
  . cd ( FILE )
-
+  
  . cargo build --release
 
 ..................................................................................................................................................
-
+ 
 ==================================================================================================================================================
 
 
@@ -319,9 +319,9 @@
  > CORECTRL
 
  steal corectrl
-
+ 
  > Hardware controller.
-
+ 
 ..................................................................................................................................................
 
  > BLACK ARCH REPO
@@ -331,8 +331,10 @@
  Guide: https://www.blackarch.org/blackarch-guide-en.pdf
 
  Some packages which rely on systemd and older packages won't work.
+ 
+ Make sure the chaotic-aur repo is at the bottom for your /etc/pacman.conf file.
 
- > Used for penetration testing.
+ > Tools for penetration testing.
 
 ..................................................................................................................................................
 
@@ -340,9 +342,9 @@
 
  Default Install: npx dalai llama install 7B
 
- All Models Install OPTIONAL: npx dalai llama install 7B 13B 30B 65B
+ All Models Install [OPTIONAL]: npx dalai llama install 7B 13B 30B 65B
 
- Run Dalai: npx dalai serve
+ Start Dalai: npx dalai serve
 
  Where is Dalai found? [ localhost:3000 ] in your browser.
 
@@ -395,8 +397,8 @@
  Use BleachBit
 
  OR
-
- doas pacman -Sc
+ 
+ doas pacman -Sc 
 
 ..................................................................................................................................................
 
@@ -462,13 +464,13 @@
 ..................................................................................................................................................
 
  . Copy and paste this command in the terminal
-
+ 
  su
-
+ 
  nvidia-xconfig --cool-bits=8
-
+ 
  > Then use GreenWithEnvy
-
+ 
 ..................................................................................................................................................
 
 ==================================================================================================================================================
@@ -493,9 +495,9 @@
  OR
 
  doas rm -R /var/lib/pacman/sync
-
- OR
-
+ 
+ OR 
+ 
  doas rm /var/lib/pacman/db.lck
 
 ..................................................................................................................................................
@@ -516,7 +518,7 @@
 ..................................................................................................................................................
 
  . Add [ defaults,nosuid,nodev,uid=1000,gid=1000 ] to edit mount options under system icon name.
-
+ 
 ..................................................................................................................................................
 
 ==================================================================================================================================================
@@ -568,7 +570,7 @@
  . Open a terminal and type ( sudo artix-chroot [ DIRECTORY ] )
 
  . Apply whatever fix you find online through this environment.
-
+ 
  . Sometimes ( sudo pacman -Syu ) fixes things.
 
 ..................................................................................................................................................
@@ -589,13 +591,13 @@
 ..................................................................................................................................................
 
  > The command [ sudo fix-coolrune ] might fix your problem.
-
- . If you have any issues go to [ https://wiki.artixlinux.org/Main/Troubleshooting ]
-
+ 
+ . If you have any issues go to [ https://wiki.artixlinux.org/Main/Troubleshooting ] 
+ 
  . Make a post on the Artix Linux forum at [ https://forum.artixlinux.org ]
-
+ 
  . The Arch Linux forum [ https://bbs.archlinux.org ] has many solutions to issues.
-
+ 
 ..................................................................................................................................................
 
 ==================================================================================================================================================
