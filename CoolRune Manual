@@ -324,13 +324,13 @@
  
 ..................................................................................................................................................
 
- > BLACK ARCH REPO
+ > BLACKARCH REPO
 
  su -c'curl -O https://blackarch.org/strap.sh && sh strap.sh && pacman -Syu --noconfirm --needed'
 
  Guide: https://www.blackarch.org/blackarch-guide-en.pdf
 
- Some packages which rely on systemd and older packages won't work.
+ Some packages in the repository which rely on systemd and older packages won't work.
  
  Make sure the chaotic-aur repo is at the bottom of your /etc/pacman.conf file.
 
