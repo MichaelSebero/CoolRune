@@ -338,7 +338,21 @@
 
 ..................................................................................................................................................
 
- > DALAI AI ASSISTANT
+ > AI ASSISTANTS 
+ 
+ . GPT4ALL
+ 
+ git clone --recurse-submodules https://github.com/nomic-ai/gpt4all.git
+ 
+ GPT4All is found in the [ /home/USER ] directory
+
+ Torrent the [ gpt4all-lora-unfiltered-quantized.bin ] version.
+ 
+ Place [ gpt4all-lora-unfiltered-quantized.bin ] in the [ Chat ] folder.
+ 
+ Start the CLI by entering [ cd gpt4all && cd chat;./gpt4all-lora-quantized-linux-x86 -m gpt4all-lora-unfiltered-quantized.bin ] in the terminal.
+
+ . DALAI AI ASSISTANT
 
  Default Install: npx dalai llama install 7B
 
@@ -348,7 +362,7 @@
 
  Where is Dalai found? [ localhost:3000 ] in your browser.
 
- > This is a user ran ChatGPT-like AI assistant.
+ > These are user ran ChatGPT-like AI assistants.
 
 ..................................................................................................................................................
 
