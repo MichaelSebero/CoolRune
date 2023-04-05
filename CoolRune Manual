@@ -344,7 +344,7 @@
  
  git clone --recurse-submodules https://github.com/nomic-ai/gpt4all.git
  
- GPT4All is found in the [ /home/USER ] directory
+ GPT4All is found in the [ /home/USER ] directory.
 
  Torrent the [ gpt4all-lora-unfiltered-quantized.bin ] version.
  
