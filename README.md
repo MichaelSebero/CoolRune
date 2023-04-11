@@ -17,15 +17,15 @@ MAC address randomization on login.
 
 An easy to understand user manual.
     
-All of the productivity tools from my GitHub.
+Custom programs and all of the productivity tools from my GitHub.
 
 A custom version of LibreWolf that's more secure and lighter than Brave.
  
 System stability tweaks.
   
-A system hardness rating of 70.
+A Lynis hardness rating of 70.
 
-AUR and Flatpack support.
+AUR and Flatpack integration.
 	
 DNS traffic encryption.
 
