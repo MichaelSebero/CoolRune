@@ -25,7 +25,7 @@ System stability tweaks.
   
 A Lynis hardness rating of 70.
 
-AUR and Flatpack integration.
+AUR and Flatpack repo integration.
 	
 DNS traffic encryption.
 
