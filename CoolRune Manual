@@ -51,11 +51,11 @@
  
  - All DNS traffic is encrypted through [ dnscrypt-proxy ] which prevents DNS leaks.
  
- - CoolRune is a productivity and security oriented operating system, most pornographic and unsafe websites are blocked by default.
+ - CoolRune is a productivity and security oriented Meta-Distribution, most pornographic and unsafe websites are blocked by default.
   
  - [ doas ] finishes commands quicker than [ sudo ] but you might need [ sudo ] for other commands.
  
- - You can still use sudo commands with this operating system.
+ - You can still use sudo commands with this Meta-Distribution.
  
  - Change shaders to Vulkan in Steam settings and enable Steam Play for Linux compatibility.
  
@@ -65,18 +65,10 @@
  
  - The command [ game-focus ] kills your desktop enviroment and launches Steam in big picture mode.
  
- - CoolRune comes with a customized LibreWolf instance which is tweaked to have maximum security.
+ - CoolRune comes with a customized LibreWolf instance called "Vanguard" which is tweaked to have maximum security.
  
- - The customized LibreWolf instance can accept passwords from Chrome.
- 
- - If website authentication bugs out disable the User-Agent Switcher temporarily.
- 
- - Use the Invidious proxy for YouTube and Searx as a proxy for Google.
- 
- - Yandex is a useful search engine for finding alternative information.
- 
- - If the website or the API is down for Searx use Yandex.
-
+ > https://github.com/MichaelSebero/Vanguard-Browser
+    
  - You can tile applications by moving them to the middle left/right, bottom left/right and bottom middle corners.
      
  - !!! TRY TO ONLY UPDATE ONCE A WEEK FOR STABILITY !!!
@@ -130,7 +122,7 @@
 
  / CHANGE DIRECTORY /
  
- cd [ /EXAMPLE/EXAMPLE/ ]
+ cd [ /EXAMPLE/EXAMPLE ]
  
 ..................................................................................................................................................
 
@@ -150,7 +142,7 @@
 
  / DEFINE COMMAND /
  
- tldr [ COMMAND ]
+ def [ COMMAND ]
  
 ..................................................................................................................................................
 
@@ -168,9 +160,9 @@
 
  / INSTALL AND UNINSTALL AUR PACKAGES /
 
- paru -S [ PACKAGE ]
+ aur [ PACKAGE ]
 
- paru -R [ PACKAGE ]
+ aur-r [ PACKAGE ]
 
 ..................................................................................................................................................
 
@@ -302,20 +294,6 @@
 
 ..................................................................................................................................................
 
- > MORE ADVANCED AUDIO SETTINGS
-
- paru -S alsa-tools
-
-..................................................................................................................................................
-
- > EXIFTOOL
-
- paru -S perl-image-exiftool
-
- > Used for editing and viewing metadata.
-
-..................................................................................................................................................
-
  > CORECTRL
 
  steal corectrl
@@ -391,7 +369,7 @@
 
  clamdscan --remove - REMOVE VIRUS
 
- doas service clamd stop	- TO STOP SCAN.
+ doas service clamd stop	- TO STOP SCAN
 
 ..................................................................................................................................................
 
@@ -479,13 +457,13 @@
 
 ..................................................................................................................................................
 
- . Copy and paste this command in the terminal
+ . Copy and paste this command in the terminal.
  
  su
  
  nvidia-xconfig --cool-bits=8
  
- > Then use GreenWithEnvy
+ > Then use GreenWithEnvy.
  
 ..................................................................................................................................................
 
@@ -523,7 +501,7 @@
 
 ..................................................................................................................................................
 
- doas pacman -S steamtinkerlaunch
+ aur steamtinkerlaunch-git
 
  > Look for Vortex
 
@@ -558,8 +536,6 @@
 
  . Apply whatever fix you find online through this environment.
  
- . Sometimes ( sudo pacman -Syu ) fixes things.
-
 ..................................................................................................................................................
 
 ==================================================================================================================================================
