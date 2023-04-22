@@ -45,7 +45,7 @@
 
  - To update your system run the command [ update ] if you don't use this specific command your system can break.
 
- - If you want to update CoolRune to the newest version run the command [ update-coolrune ] or [ update-coolrune-nvidia ]
+ - If you want to update CoolRune to the newest version, run the command [ update-coolrune ] or [ update-coolrune-nvidia ]
 
  - CoolRune uses an automatic MAC address changer upon login.
 
@@ -54,8 +54,6 @@
  - CoolRune is a productivity and security oriented Meta-Distribution, most pornographic and unsafe websites are blocked by default.
 
  - [ doas ] finishes commands quicker than [ sudo ] but you might need [ sudo ] for other commands.
-
- - You can still use sudo commands with this Meta-Distribution.
 
  - Change shaders to Vulkan in Steam settings and enable Steam Play for Linux compatibility.
 
