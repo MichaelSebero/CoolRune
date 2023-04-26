@@ -4,10 +4,10 @@
 
 # SCRIPT VOCABULARY / USER MODIFICATION SECTION
 su -c '
-pacman1="curl -RO https://raw.githubusercontent.com/MichaelSebero/CoolRune/master/CoolRune-Pacman-1.7z"
-pacman2="curl -RO https://raw.githubusercontent.com/MichaelSebero/CoolRune/master/CoolRune-Pacman-2.7z"
-root_files="curl -RO https://raw.githubusercontent.com/MichaelSebero/CoolRune/master/CoolRune-Root.7z"
-dotfiles="curl -RO https://raw.githubusercontent.com/MichaelSebero/CoolRune/master/CoolRune-Dotfiles.7z"
+pacman1="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-1.7z"
+pacman2="curl LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-2.7z"
+root_files="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Root.7z"
+dotfiles="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Dotfiles.7z"
 bwr1="curl -RO https://raw.githubusercontent.com/MichaelSebero/BWR_Frequencies/master/BWR_Frequencies_p1.7z"
 bwr2="curl -RO https://raw.githubusercontent.com/MichaelSebero/BWR_Frequencies/master/BWR_Frequencies_p2.7z"
 bwr3="curl -RO https://raw.githubusercontent.com/MichaelSebero/BWR_Frequencies/master/BWR_Frequencies_p3.7z"
