@@ -5,7 +5,7 @@
 # SCRIPT VOCABULARY / USER MODIFICATION SECTION
 su -c '
 pacman1="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-1.7z"
-pacman2="curl LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-2.7z"
+pacman2="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-2.7z"
 root_files="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Root.7z"
 dotfiles="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Dotfiles.7z"
 nvidia_patch="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-NVIDIA-Patch.7z"
