@@ -61,12 +61,12 @@ https://github.com/MichaelSebero/CoolRune-Manual
 . System stability tweaks.  
 	
 . AUR and Flatpack integration.
-
-. Pipewire
 	
 . An all in one troubleshooting program.
 	
 https://github.com/MichaelSebero/Fix-Arch-Linux
+	
+. Pipewire replacment for PulseAudio.
 	
 <p align="center">
 	<img src="https://i.postimg.cc/MTyq0wPd/Screenshot-from-2023-03-28-12-44-23.png" />
