@@ -23,36 +23,4 @@ flatpak install -y io.github.celluloid_player.Celluloid io.github.prateekmedia.a
 pip install psutil python-dateutil pydub xlib numpy pyaudio textract &&
 
 # LAST COMMANDS AND COOLRUNE INSTALL
-pacman -R --noconfirm linux linux-headers epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme mpv xfce4-sensors-plugin xfce4-notes-plugin && 7z x CoolRune-Root.7z -o/ -y && 7z x CoolRune-Dotfiles.7z -o/home/$USER -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && chmod 777 /home/$USER/.librewolf -R && chmod 777 /home/$USER/.config -R && chmod 777 /home/$USER/.var/io.github.celluloid_player.Celluloid -R && chmod 777 /home/$USER/.var/app -R && grub-install && update-grub && 7z x CoolRune-Hardening-Script.7z && sh hardening-script.sh && rm -rf /home/CoolRune-Files && 
-
-# --- Setup UFW rules
-sudo ufw limit 22/tcp  
-sudo ufw allow 80/tcp  
-sudo ufw allow 443/tcp  
-sudo ufw default deny incoming  
-sudo ufw default allow outgoing
-sudo ufw enable
-
-# --- Harden /etc/sysctl.conf
-sudo sysctl kernel.modules_disabled=1
-sudo sysctl -a
-sudo sysctl -A
-sudo sysctl mib
-sudo sysctl net.ipv4.conf.all.rp_filter
-sudo sysctl -a --pattern 'net.ipv4.conf.(eth|wlan)0.arp'
-
-# --- PREVENT IP SPOOFS
-cat <<EOF > /etc/host.conf
-order bind,hosts
-multi on
-EOF
-
-# --- Enable fail2ban
-sudo cp jail.local /etc/fail2ban/
-sudo systemctl enable fail2ban
-sudo systemctl start fail2ban
-
-echo "listening ports"
-sudo netstat -tunlp
-
-&& reboot '
+pacman -R --noconfirm linux linux-headers epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme mpv xfce4-sensors-plugin xfce4-notes-plugin && 7z x CoolRune-Root.7z -o/ -y && 7z x CoolRune-Dotfiles.7z -o/home/$USER -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && chmod 777 /home/$USER/.librewolf -R && chmod 777 /home/$USER/.config -R && chmod 777 /home/$USER/.var/io.github.celluloid_player.Celluloid -R && chmod 777 /home/$USER/.var/app -R && grub-install && update-grub && 7z x CoolRune-Hardening-Script.7z && sh hardening-script.sh && rm -rf /home/CoolRune-Files && reboot '
