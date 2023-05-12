@@ -24,7 +24,7 @@
 	
 . MAC address randomization on login.
 	
-. Inbuilt blocking of ads, trackers, pornography and known unsafe websites.
+. Inbuilt blocking of Advertisements, Trackers, Pornography and Unsafe Websites.
 	
 . A custom version of LibreWolf that's more secure and lighter than Brave.
 	
@@ -61,6 +61,8 @@ https://github.com/MichaelSebero/CoolRune-Manual
 . System stability tweaks.  
 	
 . AUR and Flatpack integration.
+
+. Pipewire
 	
 . An all in one troubleshooting program.
 	
