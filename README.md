@@ -3,36 +3,69 @@
                                                                                                                                       
 <p align="center">
 	 CoolRune is a Meta-Distribution of Artix Linux with enchanced performance, privacy and productivity.
-
-## Features	 
-A visually appealing custom XFCE desktop enviroment.
-
-Gaming optimizations.
-
-Inbuilt blocking of ads, trackers, pornography and known unsafe websites.
-
-The tkg-pds kernel.
-
-MAC address randomization on login.
-
-An easy to understand user manual.
-    
-Custom programs and all of the productivity tools from my GitHub.
-
-A custom version of LibreWolf that's more secure and lighter than Brave.
- 
-System stability tweaks.
-  
-A Lynis hardness rating of 70.
-
-AUR and Flatpack integration.
 	
-DNS traffic encryption.
+## Gaming Features
+	
+. The TKG-PDS kernel.
 
-The highest quality PulseAudio configuration.
+. NVIDIA configurations.
 
-Windows-like tiling for XFCE.
+. Overclocking software for NVIDIA cards.
 
+. Correct drivers for each graphics card type.
+	
+. Glorious Eggroll's proton prefix.
+	
+. Feral GameMode.
+
+## Security Features 
+	
+. A Lynis system hardness rating of 77.
+	
+. MAC address randomization on login.
+	
+. Inbuilt blocking of ads, trackers, pornography and known unsafe websites.
+	
+. A custom version of LibreWolf that's more secure and lighter than Brave.
+	
+https://github.com/MichaelSebero/Vanguard-Browser
+	
+. DNS traffic encryption.
+		
+## Productivity Features
+	
+. Quick Commands and Productivity tools.
+	
+https://github.com/MichaelSebero/Productivity-Mode
+	
+https://github.com/MichaelSebero/Steal-Command
+	
+https://github.com/MichaelSebero/Find-Word
+	
+https://github.com/MichaelSebero/BWR-Generator
+	
+https://github.com/MichaelSebero/Duplicate-Line-Remover
+	
+https://github.com/MichaelSebero/Archivist-Tools
+	
+. Windows-like tiling for XFCE.
+	
+https://github.com/MichaelSebero/XFCE-Tiling
+
+## Quality Features
+	
+. An easy to understand user manual.
+	
+https://github.com/MichaelSebero/CoolRune-Manual
+	
+. System stability tweaks.  
+	
+. AUR and Flatpack integration.
+	
+. An all in one troubleshooting program.
+	
+https://github.com/MichaelSebero/Fix-Arch-Linux
+	
 <p align="center">
 	<img src="https://i.postimg.cc/MTyq0wPd/Screenshot-from-2023-03-28-12-44-23.png" />
 
