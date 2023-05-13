@@ -4,12 +4,12 @@
 
 # SCRIPT VOCABULARY / USER MODIFICATION SECTION
 su -c '
-pacman1="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-1.7z"
-pacman2="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-2.7z"
-root_files="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Root.7z"
-dotfiles="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Dotfiles.7z"
-hardening_script="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Hardening-Script.7z"
-nvidia_patch="curl -LO https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-NVIDIA-Patch.7z"
+pacman1="wget https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-1.7z"
+pacman2="wget https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Pacman-2.7z"
+root_files="wget https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Root.7z"
+dotfiles="wget https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Dotfiles.7z"
+hardening_script="wget https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-Hardening-Script.7z"
+nvidia_patch="wget https://github.com/MichaelSebero/CoolRune/raw/main/CoolRune-Files/CoolRune-NVIDIA-Patch.7z"
 
 # FIRST COMMANDS AND COOLRUNE IMPORT
 pacman-key --init && pacman -Sy --noconfirm --needed p7zip git glibc && mkdir /home/CoolRune-Files && cd /home/CoolRune-Files && eval $pacman1 && eval $pacman2 && eval $root_files && eval $nvidia_patch && 7z e CoolRune-Pacman-1.7z -o/etc -y && pacman -Sy --noconfirm --needed artix-keyring archlinux-keyring artix-archlinux-support && pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com && pacman-key --lsign-key FBA220DFC880C036 && pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e CoolRune-Pacman-2.7z -o/etc -y && pacman-key --populate archlinux artix && pacman -Syyu --noconfirm --needed && eval $hardening_script && eval $dotfiles &&
