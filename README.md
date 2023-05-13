@@ -20,7 +20,7 @@
 
 ## Security Features 
 	
-. A Lynis system hardness rating of 77.
+. A Lynis system hardness rating of 70.
 	
 . MAC address randomization on login.
 	
