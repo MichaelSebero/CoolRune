@@ -18,7 +18,7 @@ pacman-key --init && pacman -Sy --noconfirm --needed p7zip git glibc && mkdir /h
 pacman -R --noconfirm pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf && pacman -S --noconfirm --needed lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader ksysguard liferea gnome-screenshot gnome-keyring gnome-calculator font-manager gwenview vim gimp gamemode lib32-gamemode fail2ban fail2ban-s6 evince dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman unrar bluez-s6 konsole catfish clamav clamav-s6 ark devilspie gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 pcmanfm pavucontrol qbittorrent redshift psensor ntfs-3g steam lynis tenacity-git element-desktop rkhunter paru proton-ge-custom && pacman -R --noconfirm nvidia && pacman -S --noconfirm --needed nvidia-dkms nvidia-utils nvidia-utils-s6 lib32-nvidia-utils nvidia-settings protontricks-git mystiq appimagelauncher opendoas linux-tkg-pds linux-tkg-pds-headers pamac-nosnap gnome-disk-utility tk lightdm-gtk-greeter-settings pantheon-calendar downgrade portmidi shellcheck npm libreoffice pipewire-pulse pipewire-alsa wireplumber &&
 
 # FLATPAK PACKAGES
-flatpak install -y io.github.celluloid_player.Celluloid io.github.prateekmedia.appimagepool org.gnome.seahorse.Application/x86_64/stable &&
+flatpak install -y io.github.celluloid_player.Celluloid io.github.prateekmedia.appimagepool org.gnome.seahorse.Application/x86_64/stable com.leinardi.gwe &&
 
 # PYTHON MODULES
 pip install psutil python-dateutil pydub xlib numpy pyaudio textract &&
