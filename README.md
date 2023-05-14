@@ -18,7 +18,7 @@
 	
 . A Lynis system hardness rating of 70.
 	
-. MAC address randomization on login.
+. MAC address randomization on boot.
 	
 . Inbuilt blocking of Advertisements, Trackers, Pornography and Unsafe Websites.
 	
@@ -26,9 +26,9 @@
 	
 https://github.com/MichaelSebero/Vanguard-Browser
 	
-. DNS traffic encryption.
+. DNS traffic encryption via DNSCrypt.
 
-. Preconfigurated and Activated AppArmor, UFW and Fail2Ban.
+. Preconfigurated / Activated AppArmor, UFW and Fail2Ban.
 		
 ## Productivity Features
 	
@@ -52,13 +52,13 @@ https://github.com/MichaelSebero/XFCE-Tiling
 
 ## Quality Features
 	
-. An easy to understand user manual.
+. Includes an easy to understand user manual.
 	
 https://github.com/MichaelSebero/CoolRune-Manual 
 	
 . AUR and Flatpack integration.
 	
-. An all in one troubleshooting program.
+. Includes a troublshooting program which fixes most issues.
 	
 https://github.com/MichaelSebero/Fix-Arch-Linux
 	
