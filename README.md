@@ -58,11 +58,11 @@ https://github.com/MichaelSebero/CoolRune-Manual
 	
 . AUR and Flatpack integration.
 	
-. Includes a troublshooting program which fixes most issues.
+. Includes a troubleshooting program which fixes most issues.
 	
 https://github.com/MichaelSebero/Fix-Arch-Linux
 	
-. Pipewire replacment for PulseAudio.
+. Pipewire replacement for PulseAudio.
 	
 <p align="center">
 	<img src="https://i.postimg.cc/MTyq0wPd/Screenshot-from-2023-03-28-12-44-23.png" />
