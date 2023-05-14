@@ -8,10 +8,6 @@
 	
 . The TKG-PDS kernel.
 
-. NVIDIA configurations.
-
-. Overclocking software for NVIDIA cards.
-
 . Correct drivers for each graphics card type.
 	
 . Glorious Eggroll's proton prefix.
@@ -31,6 +27,8 @@
 https://github.com/MichaelSebero/Vanguard-Browser
 	
 . DNS traffic encryption.
+
+. Preconfigurated and Activated AppArmor, UFW and Fail2Ban.
 		
 ## Productivity Features
 	
@@ -56,9 +54,7 @@ https://github.com/MichaelSebero/XFCE-Tiling
 	
 . An easy to understand user manual.
 	
-https://github.com/MichaelSebero/CoolRune-Manual
-	
-. System stability tweaks.  
+https://github.com/MichaelSebero/CoolRune-Manual 
 	
 . AUR and Flatpack integration.
 	
