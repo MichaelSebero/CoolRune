@@ -28,7 +28,7 @@ https://github.com/MichaelSebero/Vanguard-Browser
 	
 . DNS traffic encryption via DNSCrypt.
 
-. Preconfigurated / Activated AppArmor, UFW and Fail2Ban.
+. Preconfigurated / Activated | AppArmor, UFW and Fail2Ban.
 		
 ## Productivity Features
 	
@@ -52,7 +52,7 @@ https://github.com/MichaelSebero/XFCE-Tiling
 
 ## Quality Features
 	
-. Includes an easy to understand user manual.
+. Includes an easy to understand manual.
 	
 https://github.com/MichaelSebero/CoolRune-Manual 
 	
