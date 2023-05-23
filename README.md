@@ -40,8 +40,6 @@ https://github.com/MichaelSebero/Steal-Command
 	
 https://github.com/MichaelSebero/Find-Word
 	
-https://github.com/MichaelSebero/BWR-Generator
-	
 https://github.com/MichaelSebero/Duplicate-Line-Remover
 	
 https://github.com/MichaelSebero/Archivist-Tools
