@@ -1,0 +1,27 @@
+# DHCP configuration options
+       timeout 60;
+       retry 60;
+       reboot 10;
+       select-timeout 5;
+       initial-interval 2;
+#      reject 192.33.137.209;
+
+       interface "wlp2s0" {
+           send host-name "pablo";
+#          hardware ethernet 00:a0:24:ab:fb:9c;
+#          send dhcp-client-identifier 1:0:a0:24:ab:fb:9c;
+           send dhcp-lease-time 3600;
+#          supersede domain-search "fugue.com", "rc.vix.com", "home.vix.com";
+           prepend domain-name-servers 127.0.0.1;
+           request subnet-mask, broadcast-address, time-offset, routers,
+           domain-name, domain-name-servers, host-name;
+           require subnet-mask, domain-name-servers;
+#           script "CLIENTBINDIR/dhclient-script";
+#           media "media 10baseT/UTP", "media 10base2/BNC";
+       }
+
+#       alias {
+#         interface "wlp2s0";
+#        fixed-address 192.5.5.213;
+#        option subnet-mask 255.255.255.255;
+#       }

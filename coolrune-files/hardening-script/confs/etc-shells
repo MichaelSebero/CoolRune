@@ -1,0 +1,9 @@
+#
+# /etc/shells
+#
+/bin/sh
+/bin/bash
+/bin/rbash
+/bin/zsh
+/bin/rzsh
+# End of Shells

@@ -1,5 +1,0 @@
-blacklist firewire-core
-blacklist firewire-ohci
-blacklist firewire-net
-blacklist firewire-serial
-blacklist firewire-sbp2

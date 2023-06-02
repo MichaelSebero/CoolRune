@@ -1,0 +1,7 @@
+GROUP=100
+HOME=/home
+INACTIVE=-1
+EXPIRE=999
+SHELL=/bin/rbash
+SKEL=/etc/skel
+CREATE_MAIL_SPOOL=yes

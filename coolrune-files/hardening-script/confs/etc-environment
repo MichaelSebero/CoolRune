@@ -1,0 +1,8 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+LANG="en_GB.UTF-8"
+LANGUAGE="en_GB:en_US"
+PAGER="less"

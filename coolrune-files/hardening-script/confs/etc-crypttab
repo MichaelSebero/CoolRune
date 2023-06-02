@@ -1,0 +1,21 @@
+# crypttab: mappings for encrypted partitions
+#
+# Each mapped device will be created in /dev/mapper, so your /etc/fstab
+# should use the /dev/mapper/<name> paths for encrypted devices.
+#
+# The Arch specific syntax has been deprecated, see crypttab(5) for the
+# new supported syntax.
+#
+# NOTE: Do not list your root (/) partition here, it must be set up
+#       beforehand by the initramfs (/etc/mkinitcpio.conf).
+
+# <name>       <device>                                     <password>                		<options>
+#home          /dev/vg0/lvhome      			    /etc/mypassword1
+#var           /dev/vg0/lvvar 			            /etc/mypassword2                                     
+#crap          /dev/vg0/lvcrap                              /etc/cryptfs.key
+#swap          /dev/sdx4                                    /dev/urandom              		swap,cipher=aes-cbc-essiv:sha256,size=256
+##################################################################################################################################################
+home           /dev/vg0/lvhome			/etc/keys/home-key				cipher=serpent-xts-plain64:sha256,size=512
+var            /dev/vg0/lvvar			/etc/keys/var-key				cipher=twofish-xts-plain64:sha256,size=256
+swap           /dev/vg0/lvswap			/etc/keys/swap-key				cipher=twofish-xts-plain64:sha256,size=256
+
