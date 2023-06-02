@@ -1,0 +1,8 @@
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+-A INPUT -m limit --limit 5/min -j LOG --log-prefix "ip6tables input deny: " --log-level 7
+-A FORWARD -m limit --limit 5/min -j LOG --log-prefix "ip6tables forward deny: " --log-level 7
+-A OUTPUT -m limit --limit 5/min -j LOG --log-prefix "ip6tables output deny: " --log-level 7
+COMMIT
