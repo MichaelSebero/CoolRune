@@ -20,7 +20,7 @@ pacman -R --noconfirm pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio
 flatpak install -y io.github.celluloid_player.Celluloid io.github.prateekmedia.appimagepool org.gnome.seahorse.Application/x86_64/stable &&
 
 # PYTHON MODULES
-pip install psutil python-dateutil pydub xlib pyaudio textract &&
+pip install psutil python-dateutil pydub xlib pyaudio textract --user &&
 
 # LAST COMMANDS AND COOLRUNE INSTALL
 pacman -R --noconfirm linux linux-headers epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme mpv xfce4-sensors-plugin xfce4-notes-plugin && 7z x coolrune-root.7z -o/ -y && 7z x coolrune-dotfiles.7z -o/home/$USER -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && chmod 777 /home/$USER/.librewolf -R && chmod 777 "/home/$USER/Desktop/CoolRune Manual" && chmod 777 /home/$USER/.config -R && chmod 777 /home/$USER/.var/io.github.celluloid_player.Celluloid -R && chmod 777 /home/$USER/.var/app -R && chmod 777 /home/$USER/.local/share/applications -R && grub-install && update-grub && cd /home/coolrune-files/hardening-script && sh hardening-script.sh && rm -rf /home/coolrune-files && reboot '
