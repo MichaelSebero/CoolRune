@@ -24,6 +24,7 @@ pacman-key --init && pacman -Sy --noconfirm --needed p7zip git subversion wget &
 # REPO PACKAGES
 if pacman -Qs nvidia &> /dev/null; then
     pacman -Rns --noconfirm nvidia
+fi
 
 pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme mpv xfce4-sensors-plugin xfce4-notes-plugin && pacman -S --noconfirm --needed lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip gnome-keyring kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 evince dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman unrar bluez-s6 konsole catfish clamav clamav-s6 ark devilspie gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 pcmanfm pavucontrol qbittorrent redshift psensor ntfs-3g steam lynis tenacity-git element-desktop rkhunter paru proton-ge-custom lib32-mesa vulkan-intel lib32-vulkan-intel protontricks-git mystiq appimagelauncher opendoas linux-tkg-pds linux-tkg-pds-headers pamac-nosnap plasma-systemmonitor tk lightdm-gtk-greeter-settings kalendar downgrade portmidi shellcheck npm libreoffice pipewire-pulse pipewire-alsa wireplumber gparted obs-studio kdenlive wine-gecko &&
 
