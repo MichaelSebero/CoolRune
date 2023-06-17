@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sud
+
 su -c '
 # CLEANUP
 cleanup() {
