@@ -24,6 +24,8 @@ echo "2. CoolRune-INTEL"
 echo "3. CoolRune-NVIDIA"
 read -p "Enter your choice (1, 2 or 3): " choice
 
+
+
 ### AMD CHOICE ###
 if [ "$choice" = "1" ]; then
 # FIRST COMMANDS AND COOLRUNE IMPORT
