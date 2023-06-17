@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # PYTHON MODULES
-sudo pacman -Sy && --noconfirm --needed python-pip && pip install psutil python-dateutil pydub xlib pyaudio textract --user &&
+sudo pacman -Sy --noconfirm --needed python-pip && pip install psutil python-dateutil pydub xlib pyaudio textract --user &&
 
 su -c '
 # CLEANUP
