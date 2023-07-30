@@ -16,7 +16,7 @@
 
 ## Security Features 
 	
-. A Lynis system hardness rating of 74.
+. A Lynis system hardness rating of 75.
 	
 . MAC address randomization on boot.
 	
@@ -28,7 +28,7 @@ https://github.com/MichaelSebero/Vanguard-Browser
 	
 . DNS traffic encryption via DNSCrypt.
 
-. Preconfigurated / Activated | AppArmor, UFW and Fail2Ban.
+. Preconfigurated / Activated | AppArmor, USBGuard, UFW and Fail2Ban.
 		
 ## Productivity Features
 	
