@@ -10,13 +10,9 @@
 
 https://github.com/Frogging-Family/linux-tkg
 
-https://www.youtube.com/watch?v=qNzd57b0h08
-
 . Correct drivers for each graphics card type.
 	
 . Glorious Eggroll's proton prefix.
-
-https://github.com/GloriousEggroll/proton-ge-custom/releases
 	
 . Feral GameMode.
 
