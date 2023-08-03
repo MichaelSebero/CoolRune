@@ -16,7 +16,7 @@ root_files="wget https://github.com/MichaelSebero/CoolRune/raw/main/files/coolru
 dotfiles="wget https://github.com/MichaelSebero/CoolRune/raw/main/files/coolrune-packages/coolrune-dotfiles.7z"
 hardening_script="svn export https://github.com/MichaelSebero/CoolRune/trunk/files/hardening-script"
 nvidia_patch="wget https://github.com/MichaelSebero/CoolRune/raw/main/files/coolrune-packages/coolrune-nvidia-patch.7z"
-coolrune-manual="wget https://raw.githubusercontent.com/MichaelSebero/CoolRune/main/files/coolrune-manual/CoolRune-Manual"
+coolrune-manual="wget https://raw.githubusercontent.com/MichaelSebero/CoolRune/main/files/coolrune-manual/Manual"
 
 # COOLRUNE CHOICE SELECTION
 echo "Select a CoolRune Variant"
