@@ -26,7 +26,6 @@ read -p "Enter your choice (1 or 2): " choice
 
 ### AMD/INTEL CHOICE ###
 if [ "$choice" = "1" ]; then
-read -rep $'Make sure to backup your passwords and bookmarks before updating CoolRune, press [ENTER] to continue. "
 
 pacman -Syyu --noconfirm --needed && mkdir /home/coolrune-files && cd /home/$USER/Desktop && eval $coolrune_manual && cd /home/coolrune-files && eval $root_files && eval $dotfiles && chattr -i /etc/hosts && 7z x coolrune-root.7z -o/ -y && 7z x coolrune-dotfiles.7z -o/home/$USER -y && chattr +i /etc/hosts && chmod 777 /home/$USER/.var/io.github.celluloid_player.Celluloid -R && rm -rf /home/coolrune-files && rm -rf /home/$USER/coolrune-update.sh && chmod 777 /home/$USER/.librewolf -R && chmod 755 /home/$USER/.config -R && chmod 777 /home/$USER/.var/app -R && chmod 777 /home/$USER/.local/share/applications -R && grub-install && update-grub && reboot
 
@@ -34,7 +33,6 @@ pacman -Syyu --noconfirm --needed && mkdir /home/coolrune-files && cd /home/$USE
 
 ### NVIDIA CHOICE ###
 elif [ "$choice" = "2" ]; then
-read -rep $'Make sure to backup your passwords and bookmarks before updating CoolRune, press [ENTER] to continue. '
 
 pacman -Syyu --noconfirm --needed && mkdir /home/coolrune-files && cd /home/$USER/Desktop && eval $coolrune_manual && cd /home/coolrune-files && eval $root_files && eval $dotfiles && eval $nvidia_patch && chattr -i /etc/hosts && 7z x coolrune-root.7z -o/ -y && 7z x coolrune-nvidia-patch.7z -o/ -y && 7z x coolrune-dotfiles.7z -o/home/$USER -y && chattr +i /etc/hosts && chmod 777 /home/$USER/.var/io.github.celluloid_player.Celluloid -R && rm -rf /home/coolrune-files && rm -rf /home/$USER/coolrune-nvidia-update.sh && chmod 777 /home/$USER/.librewolf -R && chmod 755 /home/$USER/.config -R && chmod 777 /home/$USER/.var/app -R && chmod 777 /home/$USER/.local/share/applications -R && grub-install && update-grub && reboot
 fi
