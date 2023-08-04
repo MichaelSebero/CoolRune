@@ -488,7 +488,6 @@ cat confs/etc-logrotate-conf > /etc/logrotate.conf
 cat confs/etc-mkinitcpio-conf > /etc/mkinitcpio.conf
 cat confs/etc-modprobe-d-blacklist-firewire > /etc/modprobe.d/blacklist-firewire
 cat confs/etc-modprobe-d-blacklist-usb > /etc/modprobe.d/blacklist-usb
-cat confs/etc-motd > /etc/motd
 cat confs/etc-profile > /etc/profile
 cat confs/etc-securetty > /etc/securetty
 cat confs/etc-security-access-conf > /etc/security/access.conf
