@@ -53,9 +53,7 @@
 
  - CoolRune is a productivity and security oriented Meta-Distribution, most pornographic and unsafe websites are blocked by default.
 
- - [ doas ] finishes commands quicker than [ sudo ] but you might need [ sudo ] for other commands.
-
- - The [ steal ] command Installs packages from the default repo, AUR, and Flatpak.
+ - The [ steal ] command installs packages from the default repo, AUR, and Flatpak.
 
  - Change shaders to Vulkan in Steam settings and enable Steam Play for Linux compatibility.
 
