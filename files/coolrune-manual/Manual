@@ -59,7 +59,7 @@
 
  - Use [ GloriousEggroll ] which is provided with CoolRune as your proton prefix for Steam.
 
- - To get more FPS for games copy and paste [ gamemoderun %command% ] in launch options which is found through properties in Steam.
+ - To get more FPS for games and better visuals copy / paste [ gamemoderun ENABLE_VKBASALT=1 %command% ] in launch options which is found through properties in Steam.
 
  - The command [ game-focus ] kills your desktop enviroment and launches Steam in big picture mode.
  
