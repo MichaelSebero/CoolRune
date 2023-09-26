@@ -351,11 +351,9 @@
 
  . doas freshclam - TO UPDATE
 
- . clamscan -r - TO SCAN
+ . doas clamscan -r / - TO SCAN
 
- . clamdscan --remove - REMOVE VIRUS
-
- . doas service clamd stop	- TO STOP SCAN
+ . doas clamdscan --remove - REMOVE VIRUS
 
 ..................................................................................................................................................
 
