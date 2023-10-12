@@ -328,7 +328,7 @@
 
  > GITHUB DESKTOP 
  
- . flatpak install flathub io.github.shiftey.Desktop
+ . steal github-desktop
  
 ..................................................................................................................................................
 
