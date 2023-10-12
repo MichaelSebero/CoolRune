@@ -53,7 +53,7 @@
 
  - CoolRune is a productivity and security oriented Meta-Distribution, most pornographic and unsafe websites are blocked by default.
 
- - The [ steal ] command installs packages from the default repo, AUR, and Flatpak.
+ - The [ steal ] command installs packages from the default repo, AUR and Flatpak.
 
  - Change shaders to Vulkan in Steam settings and enable Steam Play for Linux compatibility.
 
@@ -152,7 +152,7 @@
 
  / ACCESS ADMIN FILE MANAGER /
 
- . su -c'pcmanfm'
+ . su -c'thunar'
 
 ..................................................................................................................................................
 
@@ -335,6 +335,18 @@
  > MYSTIQ ( Media Converter )
  
  . steal mystiq
+
+..................................................................................................................................................
+
+ > LMMS ( Digital Audio Workstation )
+
+ . steal lmms
+  
+..................................................................................................................................................
+
+ > PSENSOR ( Hardware Heat Monitor )
+
+ . steal psensor
 
 ..................................................................................................................................................
 
