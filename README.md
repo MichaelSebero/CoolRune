@@ -69,5 +69,3 @@ PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
 
 My Website: https://greenlightsuccess.webflow.io
 
-Element Server: https://matrix.to/#/#coolrune-linux:matrix.org
-
