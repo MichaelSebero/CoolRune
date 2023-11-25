@@ -45,7 +45,7 @@
 
  - To update your system run the command [ update ] if you don't use this specific command your system can break.
 
- - If you want to update CoolRune to the newest version, run the command [ update-coolrune ] or [ update-coolrune-nvidia ]
+ - If you want to update CoolRune to the newest version, run the command [ updatecoolrune ]
 
  - CoolRune uses an automatic MAC address changer upon login.
 
@@ -61,7 +61,7 @@
 
  - To get more FPS for games and better visuals copy / paste [ gamemoderun ENABLE_VKBASALT=1 %command% ] in launch options which is found through properties in Steam.
 
- - The command [ game-focus ] kills your desktop enviroment and launches Steam in big picture mode.
+ - The command [ gamefocus ] kills your desktop enviroment and launches Steam in big picture mode.
  
  - CoolRune comes with a customized LibreWolf instance called "Vanguard" which is tweaked to have maximum security.
 
