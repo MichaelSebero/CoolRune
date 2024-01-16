@@ -45,7 +45,7 @@
 
  - To update your system run the command [ update ] if you don't use this specific command your system can break.
 
- - If you want to update CoolRune to the newest version, run the command [ updatecoolrune ]
+ - If you want to update CoolRune to the newest version, run the command [ update-coolrune ]
 
  - CoolRune uses an automatic MAC address changer upon login.
 
