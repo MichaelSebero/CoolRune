@@ -247,7 +247,7 @@
 
  . cd ( FILE )
 
- . doas pip3 install -e
+ . pip install -r requirements.txt --break-system-packages
 
 ..................................................................................................................................................
 
@@ -446,7 +446,7 @@
 
  . su -c'nvidia-xconfig --cool-bits=8 && reboot'
  
- > Then use GreenWithEnvy.
+ - Then use GreenWithEnvy.
  
  . Make an overclock profile.
  
