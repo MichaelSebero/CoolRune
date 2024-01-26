@@ -19,6 +19,8 @@ https://github.com/Frogging-Family/linux-tkg
 	
 . MAC address randomization on boot.
 	
+. Antivirus software | ClamAV and Chkrootkit.
+	
 . Inbuilt blocking of Advertisements, Trackers, Pornography and Unsafe Websites.
 	
 . A custom version of LibreWolf that's more secure and lighter than Brave.
