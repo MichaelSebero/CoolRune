@@ -39,11 +39,9 @@ https://github.com/MichaelSebero/Productivity-Mode
 	
 https://github.com/MichaelSebero/Steal-Command
 	
-https://github.com/MichaelSebero/Find-Word
-	
-https://github.com/MichaelSebero/Duplicate-Line-Remover
-	
 https://github.com/MichaelSebero/Archivist-Tools
+	
+https://github.com/MichaelSebero/Document-Tools
 	
 . Windows-like tiling for XFCE.
 	
