@@ -17,6 +17,10 @@ https://github.com/Frogging-Family/linux-tkg
 	
 . A Lynis system hardness rating of 75.
 	
+. System hardening tweaks via Linux Hardening Script.
+	
+https://github.com/MichaelSebero/Linux-Hardening-Script
+	
 . MAC address randomization on boot.
 	
 . Antivirus software | ClamAV and Chkrootkit.
@@ -28,7 +32,7 @@ https://github.com/Frogging-Family/linux-tkg
 https://github.com/MichaelSebero/Vanguard-Browser
 	
 . DNS traffic encryption via DNSCrypt.
-
+	
 . Preconfigurated / Activated | AppArmor, USBGuard, UFW and Fail2Ban.
 		
 ## Productivity Features
