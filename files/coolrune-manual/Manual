@@ -49,7 +49,7 @@
 
  - CoolRune uses an automatic MAC address changer upon login.
 
- - All DNS traffic is encrypted through [ dnscrypt-proxy ] which prevents DNS leaks.
+ - All DNS traffic is encrypted through [ dnscrypt-proxy ] via Yandex which prevents DNS leaks.
 
  - CoolRune is a productivity and security oriented Meta-Distribution, most pornographic and unsafe websites are blocked by default.
 
@@ -59,7 +59,8 @@
 
  - Use [ GloriousEggroll ] which is provided with CoolRune as your proton prefix for Steam.
 
- - To get more FPS for games and better visuals copy / paste [ gamemoderun ENABLE_VKBASALT=1 %command% ] in launch options which is found through properties in Steam.
+ - To get more FPS for games and better visuals copy / paste [ gamemoderun ENABLE_VKBASALT=1 %command% ] in launch options -
+   which is found through properties in Steam.
 
  - The command [ gamefocus ] kills your desktop enviroment and launches Steam in big picture mode.
  
@@ -67,7 +68,7 @@
 
  > https://github.com/MichaelSebero/Vanguard-Browser
 
- - You can tile applications by moving them to the middle left/right, bottom left/right and bottom middle corners.
+ - You can tile applications by moving them to the middle left / right, bottom left / right and bottom middle corners.
 
  - !!! TRY TO ONLY UPDATE ONCE A WEEK FOR STABILITY !!!
 
@@ -354,6 +355,12 @@
 
 ..................................................................................................................................................
 
+ > ANACONDA
+ 
+ . steal anaconda
+
+..................................................................................................................................................
+ 
 ==================================================================================================================================================
 
 
@@ -471,10 +478,42 @@
 
 ..................................................................................................................................................
 
+ > WHAT IS ANACONDA? 
+
+ . Anaconda is a distribution platform that simplifies the process of installing and managing Python presets (enviroments) and their dependencies.
+ 
+ - Example: | machine-learning-environment | data-analysis-environment | video-subtitle-remover-environment |
+
+..................................................................................................................................................
+
+ > HOW TO CREATE ENVIROMENT IN ANACONDA
+ 
+ . conda create -n [ NAME OF ENVIROMENT OF YOUR CHOOSING ] python=[ PYTHON VERSION ]
+ 
+ - Example: conda create -n test python=3.11
+ 
+ . conda activate [ NAME OF ENVIROMENT OF YOUR CHOOSING ]
+
+..................................................................................................................................................
+
  > HOW TO CHANGE ENVIROMENT IN ANACONDA
+ 
+ . conda env list
+ 
+ . conda activate [ NAME OF ENVIROMENT ]
+ 
+..................................................................................................................................................
 
- . conda create -n myenv python=[ PYTHON VERSION ] && conda activate myenv
+ > HOW TO LEAVE ANACONDA ENVIROMENT
+ 
+ . conda deactivate
+ 
+..................................................................................................................................................
 
+ > HOW TO DELETE ANACONDA ENVIROMENT
+ 
+ . conda remove --name [ NAME OF ENVIROMENT ] --all
+ 
 ..................................................................................................................................................
 
 ==================================================================================================================================================
@@ -516,7 +555,9 @@
 
  . Copy the directory from the top bar.
 
- . Open a terminal and type ( sudo artix-chroot [ DIRECTORY ] )
+ . Open a terminal and type -
+ 
+ . sudo artix-chroot [ DIRECTORY ]
 
  . Apply whatever fix you find online through this environment.
 
