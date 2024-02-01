@@ -43,7 +43,7 @@
 
  > Follow the template provided by [ Connect to Wi-fI ]
 
- - To update your system run the command [ update ] if you don't use this specific command your system can break.
+ - To update your system's packages run the command [ update ] if you don't use this specific command your system can break.
 
  - If you want to update CoolRune to the newest version, run the command [ update-coolrune ]
 
@@ -309,6 +309,12 @@
  
 ..................................................................................................................................................
 
+ / FIX COOLRUNE /
+ 
+ . fix-coolrune
+ 
+ - This command is a troubleshooting tool for CoolRune.
+
 ==================================================================================================================================================
 
 
@@ -443,7 +449,7 @@
 
  . Connect to the internet in the top right if you have a Wi-Fi reciever.
 
- . Find the file explorer and find your previous install.
+ . Locate the Thunar and find your previous install's directory.
 
  . Copy the directory from the top bar.
 
