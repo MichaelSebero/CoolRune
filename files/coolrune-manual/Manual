@@ -314,6 +314,16 @@
  . fix-coolrune
  
  - This command is a troubleshooting tool for CoolRune.
+ 
+..................................................................................................................................................
+
+ / INSTALL OPTIONAL /
+ 
+ . install-optional
+ 
+ - This command installs optional packages for CoolRune and imports the Blackarch repository.
+ 
+..................................................................................................................................................
 
 ==================================================================================================================================================
 
@@ -324,7 +334,7 @@
 
 ==================================================================================================================================================
 
- / USEFUL PACKAGES TO INSTALL /
+ / USEFUL PACKAGES AND PROGRAMS TO INSTALL /
 
 ==================================================================================================================================================
 
@@ -337,6 +347,8 @@
  . cd sherlock
 
  . pip install -r requirements.txt --break-system-packages
+ 
+ . python3 sherlock [ USERNAME OF ACCOUNT ]
 
 ..................................................................................................................................................
 
@@ -348,7 +360,7 @@
 
  > BLACKARCH REPO ( Tools for Penetration Testing )
 
- . su -c'curl -O https://blackarch.org/strap.sh && sh strap.sh && pacman -Syu --noconfirm --needed'
+ . su -c'curl -O https://blackarch.org/strap.sh && sh strap.sh && pacman -Sy --noconfirm --needed'
 
  - Guide: https://www.blackarch.org/blackarch-guide-en.pdf
 
