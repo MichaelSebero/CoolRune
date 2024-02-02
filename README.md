@@ -55,7 +55,7 @@ https://github.com/MichaelSebero/XFCE-Tiling
 	
 . Includes an easy to understand manual.
 	
-https://github.com/MichaelSebero/CoolRune-Manual 
+https://raw.githubusercontent.com/MichaelSebero/CoolRune/main/files/coolrune-manual/Manual
 	
 . AUR and Flatpack integration.
 	
