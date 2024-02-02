@@ -1,16 +1,11 @@
 #!/bin/bash
-
+su -c'
 ufw limit 22/tcp  
 ufw allow 80/tcp  
 ufw allow 443/tcp  
 ufw default deny incoming  
 ufw default allow outgoing
 ufw enable
-
-cat <<EOF > /etc/host.conf
-order bind,hosts
-multi on
-EOF
 
 cp jail.local /etc/fail2ban/
 
@@ -74,14 +69,14 @@ echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
 # Log packets with impossible addresses.
 for i in /proc/sys/net/ipv4/conf/*/log_martians; do echo 1 > "$i"; done
 
-# Don't log invalid responses to broadcast
+# Dont log invalid responses to broadcast
 echo 1 > /proc/sys/net/ipv4/icmp_ignore_bogus_error_responses
 
-# Don't accept or send ICMP redirects.
+# Dont accept or send ICMP redirects.
 for i in /proc/sys/net/ipv4/conf/*/accept_redirects; do echo 0 > "$i"; done
 for i in /proc/sys/net/ipv4/conf/*/send_redirects; do echo 0 > "$i"; done
 
-# Don't accept source routed packets.
+# Dont accept source routed packets.
 for i in /proc/sys/net/ipv4/conf/*/accept_source_route; do echo 0 > "$i"; done
 
 # Disable multicast routing
@@ -105,7 +100,7 @@ for i in /proc/sys/net/ipv4/conf/*/bootp_relay; do echo 0 > "$i"; done
 "$IPTABLES" -P FORWARD DROP
 "$IPTABLES" -P OUTPUT DROP
 
-# Set the nat/mangle/raw tables' chains to ACCEPT
+# Set the nat/mangle/raw tables chains to ACCEPT
 "$IPTABLES" -t nat -P PREROUTING ACCEPT
 "$IPTABLES" -t nat -P OUTPUT ACCEPT
 "$IPTABLES" -t nat -P POSTROUTING ACCEPT
@@ -248,7 +243,7 @@ fi
 # Miscellaneous.
 #------------------------------------------------------------------------------
 
-# We don't care about Milkosoft, Drop SMB/CIFS/etc..
+# We dont care about Milkosoft, Drop SMB/CIFS/etc..
 "$IPTABLES" -A INPUT -p tcp -m multiport --dports 135,137,138,139,445,1433,1434 -j DROP
 "$IPTABLES" -A INPUT -p udp -m multiport --dports 135,137,138,139,445,1433,1434 -j DROP
 
@@ -436,7 +431,7 @@ fi
 # Explicitly log and reject everything else.
 #------------------------------------------------------------------------------
 
-# Use REJECT instead of REJECTLOG if you don't need/want logging.
+# Use REJECT instead of REJECTLOG if you dont need/want logging.
 "$IPTABLES" -A INPUT -j REJECTLOG
 "$IPTABLES" -A OUTPUT -j REJECTLOG
 "$IPTABLES" -A FORWARD -j REJECTLOG
@@ -504,3 +499,4 @@ cat confs/etc-vconsole-conf > /etc/vconsole.conf
 cat confs/etc-wpa_supplicant-wpa-supplicant-conf > /etc/wpa_supplicant/wpa-supplicant.conf
 cat confs/etc-zsh-zprofile > /etc/zsh/zprofile
 cat confs/etc-zsh-zshrc > /etc/zsh/zshrc
+'

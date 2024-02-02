@@ -15,7 +15,7 @@ https://github.com/Frogging-Family/linux-tkg
 
 ## Security Features 
 	
-. A Lynis system hardness rating of 75.
+. A Lynis system hardness rating of 74.
 	
 . System hardening tweaks via Linux Hardening Script.
 	
@@ -39,13 +39,15 @@ https://github.com/MichaelSebero/Vanguard-Browser
 	
 . Quick Commands and Productivity tools.
 	
-https://github.com/MichaelSebero/Productivity-Mode
-	
-https://github.com/MichaelSebero/Steal-Command
-	
 https://github.com/MichaelSebero/Archivist-Tools
 	
 https://github.com/MichaelSebero/Document-Tools
+	
+https://github.com/MichaelSebero/Media-Tools
+	
+https://github.com/MichaelSebero/Productivity-Mode
+	
+https://github.com/MichaelSebero/Steal-Command
 	
 . Windows-like tiling for XFCE.
 	
@@ -57,7 +59,7 @@ https://github.com/MichaelSebero/XFCE-Tiling
 	
 https://raw.githubusercontent.com/MichaelSebero/CoolRune/main/files/coolrune-manual/Manual
 	
-. AUR and Flatpack integration.
+. Chaotic AUR and Flatpack repository integration.
 	
 . Includes a troubleshooting program which fixes most issues.
 	
@@ -66,7 +68,7 @@ https://github.com/MichaelSebero/Fix-Arch-Linux
 . Pipewire replacement for PulseAudio.
 	
 <p align="center">
-	<img src="https://i.postimg.cc/MTyq0wPd/Screenshot-from-2023-03-28-12-44-23.png" />
+	<img src="https://i.postimg.cc/C53HDLTZ/ksnip-20240224-100057.png" />
 
 ## Donations and Contacts
 PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
