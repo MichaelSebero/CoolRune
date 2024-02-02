@@ -39,11 +39,11 @@
 
  - In Konsole there's a list of quick commands provided in [ - Commands - ]
 
- - If you have a wireless internet connection, look in Konsole for [ List Wi-Fi ] and [ Connect to Wi-Fi ]
+ - If you have a wireless internet connection, look in Konsole for [ Connect to Wi-Fi ]
+ 
+ - The command [ install-optional ] installs optional packages for CoolRune, this is useful if you have a laptop.
 
- > Follow the template provided by [ Connect to Wi-fI ]
-
- - To update your system's packages run the command [ update ] if you don't use this specific command your system can break.
+ - To update all of your system's packages at once run the command [ update ]
 
  - If you want to update CoolRune to the newest version, run the command [ update-coolrune ]
 
@@ -88,6 +88,14 @@
  / SUPER USER /
 
  . su
+
+..................................................................................................................................................
+
+ / PACKAGE DICTIONARY /
+ 
+ . pd
+
+ - This command searches Pacman, AUR and Flatpak for specific packages based off keywords. 
 
 ..................................................................................................................................................
 
@@ -136,18 +144,18 @@
 ..................................................................................................................................................
 
  / LOAD PYTHON SCRIPT /
-
- . cd [ DIRECTORY/TO/PYTHON-SCRIPT ]
  
- . python3 [ FILE ]
+ . p [ DIRECTORY TO .py FILE ]
+ 
+ - Example: p /home/1.py
 
 ..................................................................................................................................................
 
  / INSTALL AND UNINSTALL PYTHON MODULES /
 
- . pip3 install [ MODULE ]
+ . pip [ MODULE ]
 
- . pip3 uninstall [ MODULE ]
+ . pip-u [ MODULE ]
 
 ..................................................................................................................................................
 
@@ -167,7 +175,7 @@
 
  . aur [ PACKAGE ]
 
- . aurr [ PACKAGE ]
+ . aur-r [ PACKAGE ]
 
 ..................................................................................................................................................
 
@@ -179,7 +187,7 @@
 
  / FIND UUID /
  
- . lsblk -f
+ . doas lsblk -f
 
 ..................................................................................................................................................
 
@@ -218,30 +226,54 @@
  / RELOAD S6 /
 
  . s6-db-reload
+ 
+..................................................................................................................................................
+
+ / ANTI-VIRUS /
+ 
+ . anti-virus
+ 
+ - This command uses ClamAV to scan your whole system and automatically removes suspected malware.
 
 ..................................................................................................................................................
 
  / ARCHIVIST TOOLS COMMANDS /
  
  > https://github.com/MichaelSebero/Archivist-Tools
-
- . change-hash-r
+ 
+ . archivist-tools
+ 
+ - or
  
  . change-hash
  
- . delete-duplicate-r
+ . change-hash-r
  
  . delete-duplicate
  
- . find-word-archive
+ . delete-duplicate-r
  
- . find-word.py
+ . delete-empty-folders
+ 
+ . delete-filename-keyword
+ 
+ . delete-filename-keyword-r
+ 
+ . empty-directory-contents
+ 
+ . give-random-name
+ 
+ . mass-uppercase
+ 
+ . mass-uppercase-r
  
  . rename-detailed-files
  
- . separate-by-filetype-r
+ . sort-by-file-format
  
- . separate-by-filetype
+ . sort-by-filetype
+ 
+ . sort-by-filetype-r
  
  . sort-by-year
 
@@ -251,25 +283,68 @@
  
  > https://github.com/MichaelSebero/Document-Tools
 
+ . document-tools
+ 
+ - or
+ 
  . compare-documents
  
  . duplicate-line-remover
  
- . keyword-line-extractor-r
+ . find-word
+  
+ . find-word-archive
  
  . keyword-line-extractor
  
- . replace-keyword-r
+ . keyword-line-extractor-r
  
  . replace-keyword
  
+ . replace-keyword-r
+ 
 ..................................................................................................................................................
 
- / GAMEFOCUS /
+ / MEDIA TOOLS COMMANDS /
  
- . gamefocus
+ > https://github.com/MichaelSebero/Media-Tools
+ 
+ . media-tools
+ 
+ - or 
+ 
+ . compare-audio
+ 
+ . convert-to-opus
+ 
+ . cue-file-generator
+ 
+ . mass-crop-images
+ 
+ . mass-thumbnail
+ 
+ . remove-audio
+ 
+ . rotate-video
+ 
+ . sort-by-album
+ 
+ . sort-by-artist
+ 
+ . sort-by-genre
+ 
+ . sort-by-resolution
+ 
+ . view-metadata
 
- - The command [ gamefocus ] kills your desktop environment and launches Steam in big picture mode.
+ 
+..................................................................................................................................................
+
+ / GAME FOCUS /
+ 
+ . game-focus
+
+ - The command [ game-focus ] kills your desktop environment and launches Steam in big picture mode.
   
 ..................................................................................................................................................
 
@@ -289,21 +364,29 @@
 
 ..................................................................................................................................................
 
- / CONVERT DIRECTORY TO WINE DIRECTORY /
+ / WINEDIR /
  
  . winedir
 
+ - This command converts a Linux directory into to a Wine directory.
+ 
+ - Example: home/frank/folder > z:\home\frank\folder\
+ 
 ..................................................................................................................................................
 
- / PLAY RANDOM SONG FROM DIRECTORY /
+ / RANDOM SONG /
  
- . randsong
+ . random-song
 
+ - This command plays a random song from a given directory.
+ 
 ..................................................................................................................................................
 
  / DISABLE IPV6 /
  
- . disableipv6
+ . disable-ipv6
+ 
+ . disable-ipv6-perm
 
 ..................................................................................................................................................
 
@@ -321,13 +404,77 @@
  
 ..................................................................................................................................................
 
- / INSTALL OPTIONAL /
+ / PLAN S /
  
- . install-optional
+ . plan-s
  
- - This command installs optional packages for CoolRune and imports the Blackarch repository.
+ - This command deletes all of your system files and makes them mostly unrecoverable.
  
 ..................................................................................................................................................
+
+ / PRIVATEGPT /
+
+ . privategpt
+ 
+ - This runs PrivateGPT if installed from [ install-optional ]
+ 
+ - After running the program open up your browser and enter [ localhost:8001 ]
+
+..................................................................................................................................................
+
+ / FORMAT TO XFS /
+ 
+ . format-to-xfs
+ 
+ . format-to-xfs-e
+ 
+ - These two commands format a drive to XFS, the -e variant formats the drive with encrypted XFS. 
+ 
+ - After formatting adjust the permissions of the newly formatted drive to sudo chmod 777 [ /dev/formatteddrive ]
+
+..................................................................................................................................................
+
+ / FORMAT TO ZFS /
+ 
+ . format-to-zfs
+ 
+ . format-to-zfs-e
+
+ - These two commands format a drive to ZFS, the -e variant formats the drive with encrypted ZFS. 
+ 
+ - After formatting adjust the permissions of the newly formatted drive to sudo chmod 777 [ /dev/formatteddrive ]
+ 
+..................................................................................................................................................
+
+ / FIX CLOCK /
+ 
+ . fix-clock
+ 
+ - This command fixes issues with your system's clock.
+ 
+..................................................................................................................................................
+
+  / AUDIO FREQUENCY TOOLS /
+
+  . audio-frequency-tools
+  
+  - This command lets you generate and detect audio frequencies.
+  
+..................................................................................................................................................
+
+ / STEAL MEDIA /
+ 
+ . steal-media
+ 
+ - This command will download most audio, videos and livestreams. 
+ 
+ - You can download multiple URLs if they're separated by spaces.
+ 
+..................................................................................................................................................
+
+
+
+
 
 ==================================================================================================================================================
 
@@ -344,41 +491,9 @@
 
 ..................................................................................................................................................
 
- > SHERLOCK ( Basic OSINT Program ) 
-
- . git clone https://github.com/sherlock-project/sherlock.git
-
- . cd sherlock
-
- . pip install -r requirements.txt --break-system-packages
- 
- . python3 sherlock [ USERNAME OF ACCOUNT ]
-
-..................................................................................................................................................
-
  > CORECTRL ( Hardware Controller )
 
  . steal corectrl
-
-..................................................................................................................................................
-
- > BLACKARCH REPO ( Tools for Penetration Testing )
-
- . su -c'curl -O https://blackarch.org/strap.sh && sh strap.sh && pacman -Sy --noconfirm --needed'
-
- - Guide: https://www.blackarch.org/blackarch-guide-en.pdf
-
- - Some packages in the repository which rely on systemd and older packages won't work.
-
- - Make sure the chaotic-aur repo is at the bottom of your /etc/pacman.conf file.
-
-..................................................................................................................................................
-
- > STEAM TINKER ( Vortex Mod Manager / Mod Organizer )
-
- . steal steamtinkerlaunch
-
- - Look for Vortex.
 
 ..................................................................................................................................................
 
@@ -430,6 +545,52 @@
 
 ..................................................................................................................................................
  
+ > NICOTINE+ ( Music Sharing Client )
+ 
+ . steal nicotine+
+ 
+..................................................................................................................................................
+
+ > ORCASLICER ( 3D G-code Generator )
+ 
+ - https://github.com/SoftFever/OrcaSlicer/releases
+ 
+..................................................................................................................................................
+
+ > POLYMC ( FOSS Minecraft Launcher )
+ 
+ - https://github.com/PolyMC/PolyMC/releases
+ 
+..................................................................................................................................................
+
+ > MINETEST ( FOSS Minecraft-like Game )
+
+ . steal minetest
+
+ - Check out Mineclone 2 as well.
+
+..................................................................................................................................................
+
+ > NEXUS MODS APP ( Linux Native Mod Installer )
+ 
+ - https://github.com/Nexus-Mods/NexusMods.App/releases
+ 
+..................................................................................................................................................
+
+ > PICARD ( Music Metadata Editor / Fetcher )
+ 
+ . steal picard
+ 
+..................................................................................................................................................
+
+ > XFS UNDELETE
+
+ . steal xfs_undelete-git
+ 
+ - Documentation: https://github.com/ianka/xfs_undelete
+ 
+..................................................................................................................................................
+
 ==================================================================================================================================================
 
 
@@ -448,6 +609,8 @@
  > UNIVERSAL ADVICE
 
  . The command [ fix-coolrune ] might fix your problem.
+ 
+ . CTRL + ALT + F1 will bring you into a virtual terminal if needed.
 
  . If you have any issues go to [ https://wiki.artixlinux.org/Main/Troubleshooting ]
 
@@ -474,12 +637,16 @@
  . sudo artix-chroot [ DIRECTORY ]
 
  . Apply whatever fix you find online through this environment.
+ 
+ - You can transplant files or directories from the live environment into your system which are missing or corrupted.
+ 
+ - If you login and see no GUI, type [ root ] as the user and then your password. Apply your fix from there.
 
 ..................................................................................................................................................
 
  > HOW TO FIX STEAM GAMES NOT LOADING ON EXTERNAL DRIVE
 
- . Add [ defaults,nosuid,nodev,uid=1000,gid=1000 ] to edit mount options under system icon name.
+ - Add [ defaults,nosuid,nodev,uid=1000,gid=1000 ] to edit mount options under system icon name.
 
 ..................................................................................................................................................
 
@@ -536,6 +703,12 @@
  
 ..................................................................................................................................................
 
+ > HOW TO SEE ANACONDA ENVIRONMENT'S PYTHON VERSION 
+ 
+ . python --version
+
+..................................................................................................................................................
+
  > HOW TO OVERCLOCK NVIDIA GRAPHIC CARDS
  
  . su -c'nvidia-xconfig --cool-bits=8 && reboot'
@@ -572,6 +745,10 @@
 
  > HOW TO INSTALL RUST PACKAGES FROM GITHUB
 
+ . cargo install --git 'https://github.com/Test/Test.git'
+ 
+ OR
+ 
  . git clone ( URL )
 
  . cd ( FILE )
@@ -601,6 +778,10 @@
  > HOW TO USE ANTIVIRUS
 
  - CLAMAV ( Antivirus Toolkit )
+ 
+ . anti-virus
+ 
+ - or
 
  . doas freshclam - TO UPDATE
 
@@ -612,6 +793,16 @@
  
  . doas chkrootkit
 
+..................................................................................................................................................
+
+ > HOW TO PORT FORWARD
+ 
+ . Disable firewall [ gufw ]
+ 
+ . Go into your router settings and open a port which isn't reserved already, I recommend port 6881:6889.
+ 
+ . In the section of [ Internal IP Address ] make it your computer's internal IP address and set the [ Protocol ] to TCP.
+ 
 ..................................................................................................................................................
 
 ==================================================================================================================================================
