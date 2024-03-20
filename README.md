@@ -59,13 +59,13 @@ https://github.com/MichaelSebero/XFCE-Tiling
 	
 https://raw.githubusercontent.com/MichaelSebero/CoolRune/main/files/coolrune-manual/Manual
 	
-. Chaotic AUR and Flatpack repository integration.
+. Chaotic-AUR and Flatpack repository integration.
 	
 . Includes a troubleshooting program which fixes most issues.
 	
 https://github.com/MichaelSebero/Fix-Arch-Linux
 	
-. PipeWire replacement for PulseAudio.
+. PipeWire replacement of PulseAudio.
 	
 <p align="center">
 	<img src="https://i.postimg.cc/C53HDLTZ/ksnip-20240224-100057.png" />
