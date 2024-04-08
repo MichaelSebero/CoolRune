@@ -3,9 +3,9 @@
                                                                                                                                       	
 ## Gaming Features
 	
-. The TKG-PDS kernel.
+. The CachyOS kernel.
 
-https://github.com/Frogging-Family/linux-tkg
+https://github.com/CachyOS/linux-cachyos
 
 . Correct drivers for each graphics card type.
 	
