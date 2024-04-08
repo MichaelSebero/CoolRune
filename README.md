@@ -3,7 +3,7 @@
                                                                                                                                       	
 ## Gaming Features
 	
-. The CachyOS kernel.
+. The CachyOS-BORE kernel.
 
 https://github.com/CachyOS/linux-cachyos
 
