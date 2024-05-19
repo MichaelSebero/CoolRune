@@ -38,7 +38,7 @@ pacman -S --noconfirm --needed --ignore=vlc-git lib32-artix-archlinux-support ba
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna &&
 
 # PYTHON PACKAGES (MODULES NOT AVAILABLE IN REPO)
-pip install --user --break-system-packages imagehash pyzipper textract tinytag eyed3 futures audioread librosa moviepy && rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED && cd /home/coolrune-files/files/coolrune-packages &&
+pip install --user --break-system-packages imagehash pyzipper textract sounddevice tinytag eyed3 futures audioread librosa moviepy && rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED && cd /home/coolrune-files/files/coolrune-packages &&
 
 
 # LAST COMMANDS AND COOLRUNE INSTALL
@@ -72,7 +72,7 @@ pacman -S --noconfirm --needed --ignore=vlc-git lib32-artix-archlinux-support ba
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna &&
 
 # PYTHON PACKAGES (MODULES NOT AVAILABLE IN REPO)
-pip install --user --break-system-packages imagehash pyzipper textract tinytag eyed3 futures audioread librosa moviepy && rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED && cd /home/coolrune-files/files/coolrune-packages &&
+pip install --user --break-system-packages imagehash pyzipper textract sounddevice tinytag eyed3 futures audioread librosa moviepy && rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED && cd /home/coolrune-files/files/coolrune-packages &&
 
 # LAST COMMANDS AND COOLRUNE INSTALL
 7z x coolrune-root.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
@@ -138,7 +138,7 @@ pacman -S --noconfirm --needed --ignore=nvidia-390xx-utils,lib32-nvidia-390xx-ut
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna com.leinardi.gwe &&
 
 # PYTHON PACKAGES (MODULES NOT AVAILABLE IN REPO)
-pip install --user --break-system-packages imagehash pyzipper textract tinytag eyed3 futures audioread librosa moviepy && rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED && cd /home/coolrune-files/files/coolrune-packages &&
+pip install --user --break-system-packages imagehash pyzipper textract sounddevice tinytag eyed3 futures audioread librosa moviepy && rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED && cd /home/coolrune-files/files/coolrune-packages &&
 
 # LAST COMMANDS AND COOLRUNE INSTALL
 7z x coolrune-root.7z -o/ -y && 7z x coolrune-nvidia-patch.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
