@@ -25,7 +25,7 @@ https://github.com/MichaelSebero/Linux-Hardening-Script
 	
 . Antivirus software | ClamAV and Chkrootkit.
 	
-. Inbuilt blocking of Advertisements, Trackers, Pornography and Unsafe Websites.
+. Inbuilt blocking of advertisements, trackers, pornography and unsafe websites.
 	
 . A custom version of LibreWolf that's more secure and lighter than Brave.
 	
@@ -33,7 +33,7 @@ https://github.com/MichaelSebero/Vanguard-Browser
 	
 . DNS traffic encryption via DNSCrypt.
 	
-. Preconfigurated / Activated | AppArmor, USBGuard, UFW and Fail2Ban.
+. Preconfigurated / activated | AppArmor, USBGuard, UFW and Fail2Ban.
 		
 ## Productivity Features
 	
