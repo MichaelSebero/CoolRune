@@ -333,13 +333,13 @@
 
 ..................................................................................................................................................
 
- / CONVERT DIRECTORY /
+ / WINEDIR /
  
- . convert-directory
+ . winedir
 
- - This command converts a directory's info to a wine directory.
+ - This command converts a Linux directory into to a Wine directory.
  
- - Example: home/frank/folder > home\frank\folder
+ - Example: home/frank/folder > z:\home\frank\folder\
  
 ..................................................................................................................................................
 
