@@ -439,11 +439,13 @@
   
 ..................................................................................................................................................
 
- / STEAL VID /
+ / STEAL MEDIA /
  
- . steal-vid
+ . steal-media
  
- - This command will download most videos and livestreams.
+ - This command will download most audio, videos and livestreams. 
+ 
+ - You can download multiple URLs if they're separated by spaces.
  
 ..................................................................................................................................................
 
