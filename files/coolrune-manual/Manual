@@ -41,7 +41,7 @@
 
  - If you have a wireless internet connection, look in Konsole for [ Connect to Wi-Fi ]
  
- - The command [ install-optional ] installs optional packages for CoolRune,this is useful if you have a laptop.
+ - The command [ install-optional ] installs optional packages for CoolRune, this is useful if you have a laptop.
 
  - To update all of your system's packages at once run the command [ update ]
 
