@@ -249,11 +249,15 @@
  
  . delete-filename-keyword
  
+ . delete-filename-keyword-r
+ 
  . empty-directory-contents
  
  . give-random-name
  
  . mass-uppercase
+ 
+ . mass-uppercase-r
  
  . rename-detailed-files
  
