@@ -136,18 +136,18 @@
 ..................................................................................................................................................
 
  / LOAD PYTHON SCRIPT /
-
- . cd [ DIRECTORY/TO/PYTHON-SCRIPT ]
  
- . python3 [ FILE ]
+ . p [ DIRECTORY TO .py FILE ]
+ 
+ - Example: p /home/1.py
 
 ..................................................................................................................................................
 
  / INSTALL AND UNINSTALL PYTHON MODULES /
 
- . pip3 install [ MODULE ]
+ . pip [ MODULE ]
 
- . pip3 uninstall [ MODULE ]
+ . pip-u [ MODULE ]
 
 ..................................................................................................................................................
 
@@ -245,9 +245,15 @@
  
  . delete-duplicate-r
  
+ . delete-empty-folders
+ 
+ . delete-filename-keyword
+ 
  . empty-directory-contents
  
- . random-name
+ . give-random-name
+ 
+ . mass-uppercase
  
  . rename-detailed-files
  
@@ -299,15 +305,26 @@
  
  . convert-to-opus
  
+ . cue-file-generator
+ 
  . mass-crop-images
  
  . mass-thumbnail
  
+ . remove-audio
+ 
+ . rotate-video
+ 
  . sort-by-album
+ 
+ . sort-by-artist
+ 
+ . sort-by-genre
+ 
+ . sort-by-resolution
  
  . view-metadata
 
- . view-metadata-all
  
 ..................................................................................................................................................
 
@@ -442,6 +459,10 @@
  - You can download multiple URLs if they're separated by spaces.
  
 ..................................................................................................................................................
+
+
+
+
 
 ==================================================================================================================================================
 
