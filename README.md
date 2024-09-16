@@ -28,13 +28,13 @@ https://github.com/MichaelSebero/Linux-Hardening-Script
 . Inbuilt blocking of advertisements, trackers, pornography and unsafe websites.
 	
 . A custom version of LibreWolf that's more secure and lighter than Brave.
-	
+
 https://github.com/MichaelSebero/Vanguard-Browser
 	
 . DNS traffic encryption via DNSCrypt.
 	
 . Preconfigurated / activated | AppArmor, USBGuard, UFW and Fail2Ban.
-		
+	
 ## Productivity Features
 	
 . Quick Commands and Productivity tools.
@@ -49,10 +49,6 @@ https://github.com/MichaelSebero/Productivity-Mode
 	
 https://github.com/MichaelSebero/Steal-Command
 	
-. Windows-like tiling for XFCE.
-	
-https://github.com/MichaelSebero/XFCE-Tiling
-
 ## Quality Features
 	
 . Includes an easy to understand manual.
