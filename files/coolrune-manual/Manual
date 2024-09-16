@@ -38,10 +38,8 @@
 ..................................................................................................................................................
 
  - In Konsole there's a list of quick commands provided in [ - Commands - ]
-
- - If you have a wireless internet connection, look in Konsole for [ Connect to Wi-Fi ]
  
- - The command [ install-optional ] installs optional packages for CoolRune, this is useful if you have a laptop.
+ - The command [ post-install ] installs pip dependencies and optional packages for CoolRune, this is useful if you have a laptop.
 
  - To update all of your system's packages at once run the command [ update ]
 
@@ -263,6 +261,8 @@
  
  . give-random-name
  
+ . give-random-name-r
+ 
  . mass-uppercase
  
  . mass-uppercase-r
@@ -317,7 +317,9 @@
  
  . convert-to-opus
  
- . cue-file-generator
+ . generate-album-sections
+ 
+ . lossless-separator
  
  . mass-crop-images
  
@@ -416,7 +418,7 @@
 
  . privategpt
  
- - This runs PrivateGPT if installed from [ install-optional ]
+ - This runs PrivateGPT if installed from [ post-install ]
  
  - After running the program open up your browser and enter [ localhost:8001 ]
 
@@ -472,9 +474,29 @@
  
 ..................................................................................................................................................
 
+ / FIX CURSOR /
+ 
+ . fix-cursor
+ 
+ - This command frees your cursor if it's stuck
 
+..................................................................................................................................................
 
+ / FIX CORRUPT /
+ 
+ . fix-corrupt
 
+ - This command fixes corrupt packages on the system.
+
+..................................................................................................................................................
+
+ / REINSTALL ALL /
+ 
+ . reinstall-all
+
+ - This command reinstalls all packages on the system.
+
+..................................................................................................................................................
 
 ==================================================================================================================================================
 
