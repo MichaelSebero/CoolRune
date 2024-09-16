@@ -15,61 +15,55 @@ https://github.com/CachyOS/linux-cachyos
 
 ## Security Features 
 	
-. A Lynis system hardness rating of 74.
+. A Lynis system hardness rating of 76.
 	
 . System hardening tweaks via Linux Hardening Script.
 	
-https://github.com/MichaelSebero/Linux-Hardening-Script
+https://github.com/Michael-Sebero/Linux-Hardening-Script
 	
 . MAC address randomization on boot.
 	
 . Antivirus software | ClamAV and Chkrootkit.
 	
-. Inbuilt blocking of advertisements, trackers, pornography and unsafe websites.
-	
 . A custom version of LibreWolf that's more secure and lighter than Brave.
-	
-https://github.com/MichaelSebero/Vanguard-Browser
+
+https://github.com/Michael-Sebero/Vanguard-Browser
 	
 . DNS traffic encryption via DNSCrypt.
 	
-. Preconfigurated / activated | AppArmor, USBGuard, UFW and Fail2Ban.
-		
+. Pre-configurated AppArmor, USBGuard, UFW and Fail2Ban.
+	
 ## Productivity Features
 	
 . Quick Commands and Productivity tools.
 	
-https://github.com/MichaelSebero/Archivist-Tools
+https://github.com/Michael-Sebero/Archivist-Tools
 	
-https://github.com/MichaelSebero/Document-Tools
+https://github.com/Michael-Sebero/Document-Tools
 	
-https://github.com/MichaelSebero/Media-Tools
+https://github.com/Michael-Sebero/Media-Tools
 	
-https://github.com/MichaelSebero/Productivity-Mode
+https://github.com/Michael-Sebero/Productivity-Mode
 	
-https://github.com/MichaelSebero/Steal-Command
+https://github.com/Michael-Sebero/Steal-Command
 	
-. Windows-like tiling for XFCE.
-	
-https://github.com/MichaelSebero/XFCE-Tiling
-
 ## Quality Features
 	
 . Includes an easy to understand manual.
 	
-https://raw.githubusercontent.com/MichaelSebero/CoolRune/main/files/coolrune-manual/Manual
+https://raw.githubusercontent.com/Michael-Sebero/CoolRune/main/files/coolrune-manual/Manual
 	
-. Chaotic-AUR and Flatpack repository integration.
+. ALHP, CachyOS, Chaotic-AUR and Flatpack repository integration.
 	
 . Includes a troubleshooting program which fixes most issues.
 	
-https://github.com/MichaelSebero/Fix-Arch-Linux
+https://github.com/Michael-Sebero/Fix-Arch-Linux
 	
-. PipeWire audio.
+. Pre-configured PipeWire audio.
 	
 . Repo package searching.
 	
-https://github.com/MichaelSebero/Arch-Package-Dictionary
+https://github.com/Michael-Sebero/Arch-Package-Dictionary
 	
 <p align="center">
 	<img src="https://i.postimg.cc/C53HDLTZ/ksnip-20240224-100057.png" />
