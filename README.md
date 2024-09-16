@@ -67,6 +67,10 @@ https://github.com/MichaelSebero/Fix-Arch-Linux
 	
 . PipeWire audio.
 	
+. Package searching.
+	
+https://github.com/MichaelSebero/Arch-Package-Dictionary
+	
 <p align="center">
 	<img src="https://i.postimg.cc/C53HDLTZ/ksnip-20240224-100057.png" />
 
