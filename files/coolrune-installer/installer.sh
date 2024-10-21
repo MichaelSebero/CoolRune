@@ -34,7 +34,7 @@ read -p "Enter your choice (1, 2, 3 or 4): " choice
 if [ "$choice" = "1" ]; then
 
 # FIRST COMMANDS AND COOLRUNE IMPORT
-pgrep xfce4-screensaver && killall xfce4-screensaver || echo "xfce4-screensaver not running, continuing..." && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
+pgrep xfce4-screensaver && killall xfce4-screensaver || echo "xfce4-screensaver not running, continuing..." && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop && cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && cd /home/coolrune-files/files/coolrune-packages &&
 
 # REPO PACKAGES REMOVE
 pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
@@ -58,7 +58,7 @@ chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
 chmod 777 /home/$USER/.var -R &&
 
 # LAST COMMANDS
-cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
+mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 
 
 
@@ -66,7 +66,7 @@ cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /
 elif [ "$choice" = "2" ]; then
 
 # FIRST COMMANDS AND COOLRUNE IMPORT
-pgrep xfce4-screensaver && killall xfce4-screensaver || echo "xfce4-screensaver not running, continuing..." && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
+pgrep xfce4-screensaver && killall xfce4-screensaver || echo "xfce4-screensaver not running, continuing..." && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop && cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && cd /home/coolrune-files/files/coolrune-packages &&
 
 # REPO PACKAGES REMOVE
 pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
@@ -90,7 +90,7 @@ chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
 chmod 777 /home/$USER/.var -R &&
 
 # LAST COMMANDS
-cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
+mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 
 
 
@@ -98,7 +98,7 @@ cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /
 elif [ "$choice" = "3" ]; then
 
 # FIRST COMMANDS AND COOLRUNE IMPORT
-pgrep xfce4-screensaver && killall xfce4-screensaver || echo "xfce4-screensaver not running, continuing..." && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
+pgrep xfce4-screensaver && killall xfce4-screensaver || echo "xfce4-screensaver not running, continuing..." && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop && cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && cd /home/coolrune-files/files/coolrune-packages && 
 
 # REPO PACKAGES REMOVE
 pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
@@ -122,7 +122,7 @@ chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
 chmod 777 /home/$USER/.var -R &&
 
 # LAST COMMANDS
-cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
+mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 
 
 
@@ -130,7 +130,7 @@ cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /
 elif [ "$choice" = "4" ]; then
 
 # FIRST COMMANDS AND COOLRUNE IMPORT
-pgrep xfce4-screensaver && killall xfce4-screensaver || echo "xfce4-screensaver not running, continuing..." && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
+pgrep xfce4-screensaver && killall xfce4-screensaver || echo "xfce4-screensaver not running, continuing..." && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop && cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && cd /home/coolrune-files/files/coolrune-packages &&
 
 # REPO PACKAGES REMOVE
 pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
@@ -154,6 +154,6 @@ chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
 chmod 777 /home/$USER/.var -R &&
 
 # LAST COMMANDS
-cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
+mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 fi
 '
