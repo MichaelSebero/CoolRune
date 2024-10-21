@@ -1,16 +1,17 @@
 #!/bin/sh
 
-su -c '
-# CLEANUP
+# Create cleanup function outside of su command to ensure it runs
 cleanup() {
+    echo "Cleaning up installation files..."
     rm -rf /home/coolrune-files
+    trap - INT TERM ERR EXIT
     exit 1
 }
 
-trap cleanup INT TERM ERR EXIT
+# Set trap before su command
+trap cleanup INT TERM ERR
 
-
-
+su -c '
 # COOLRUNE CHOICE SELECTION
 echo "Select a CoolRune Variant"
 echo "1. CoolRune-AMD"
@@ -37,18 +38,20 @@ pacman -S --noconfirm --needed --ignore=vlc-git lib32-artix-archlinux-support ba
 # FLATPAK PACKAGES
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna &&
 
-# LAST COMMANDS AND COOLRUNE INSTALL
-7z x coolrune-root.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
+# COOLRUNE INSTALL
+7z x coolrune-root.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o/boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
 
+# RESETTING PERMISSIONS
 chmod 755 /home/$USER/.librewolf -R &&
-chmod 755 /home/$USER/.config -R &&
-chmod 755 /home/$USER/Desktop/Manual &&
-chmod 755 /home/$USER/.local/share/applications -R &&
-chmod 755 /home/$USER/.local/share/konsole -R &&
-chmod 755 /home/$USER/.local/share/xfce4-panel-profile -R &&
-chmod 755 /home/$USER/.var -R &&
+chmod 777 /home/$USER/.config -R &&
+chmod 777 /home/$USER/Desktop/Manual &&
+chmod 777 /home/$USER/.local/share/applications -R &&
+chmod 777 /home/$USER/.local/share/konsole -R &&
+chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
+chmod 777 /home/$USER/.var -R &&
 
-cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && echo "CoolRune has been successfully installed." && reboot
+# LAST COMMANDS
+cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 
 
 
@@ -67,18 +70,20 @@ pacman -S --noconfirm --needed --ignore=vlc-git lib32-artix-archlinux-support ba
 # FLATPAK PACKAGES
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna &&
 
-# LAST COMMANDS AND COOLRUNE INSTALL
-7z x coolrune-root.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
+# COOLRUNE INSTALL
+7z x coolrune-root.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o/boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
 
+# RESETTING PERMISSIONS
 chmod 755 /home/$USER/.librewolf -R &&
-chmod 755 /home/$USER/.config -R &&
-chmod 755 /home/$USER/Desktop/Manual &&
-chmod 755 /home/$USER/.local/share/applications -R &&
-chmod 755 /home/$USER/.local/share/konsole -R &&
-chmod 755 /home/$USER/.local/share/xfce4-panel-profile -R &&
-chmod 755 /home/$USER/.var -R &&
+chmod 777 /home/$USER/.config -R &&
+chmod 777 /home/$USER/Desktop/Manual &&
+chmod 777 /home/$USER/.local/share/applications -R &&
+chmod 777 /home/$USER/.local/share/konsole -R &&
+chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
+chmod 777 /home/$USER/.var -R &&
 
-cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && echo "CoolRune has been successfully installed." && reboot
+# LAST COMMANDS
+cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 
 
 
@@ -86,7 +91,7 @@ cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /
 elif [ "$choice" = "3" ]; then
 
 # FIRST COMMANDS AND COOLRUNE IMPORT
-killall xfce4-screensaver && pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
+killall xfce4-screensaver && pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'  && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
 
 # REPO PACKAGES REMOVE
 pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
@@ -97,18 +102,20 @@ pacman -S --noconfirm --needed --ignore=nvidia-390xx-utils,lib32-nvidia-390xx-ut
 # FLATPAK PACKAGES
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna com.leinardi.gwe &&
 
-# LAST COMMANDS AND COOLRUNE INSTALL
-7z x coolrune-root.7z -o/ -y && 7z x coolrune-nvidia-patch.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
+# COOLRUNE INSTALL
+7z x coolrune-root.7z -o/ -y && 7z x coolrune-nvidia-patch.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o/boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
 
+# RESETTING PERMISSIONS
 chmod 755 /home/$USER/.librewolf -R &&
-chmod 755 /home/$USER/.config -R &&
-chmod 755 /home/$USER/Desktop/Manual &&
-chmod 755 /home/$USER/.local/share/applications -R &&
-chmod 755 /home/$USER/.local/share/konsole -R &&
-chmod 755 /home/$USER/.local/share/xfce4-panel-profile -R &&
-chmod 755 /home/$USER/.var -R &&
+chmod 777 /home/$USER/.config -R &&
+chmod 777 /home/$USER/Desktop/Manual &&
+chmod 777 /home/$USER/.local/share/applications -R &&
+chmod 777 /home/$USER/.local/share/konsole -R &&
+chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
+chmod 777 /home/$USER/.var -R &&
 
-cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && echo "CoolRune has been successfully installed." && reboot
+# LAST COMMANDS
+cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 
 
 
@@ -127,17 +134,19 @@ pacman -S --noconfirm --needed --ignore=nvidia-390xx-utils,lib32-nvidia-390xx-ut
 # FLATPAK PACKAGES
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna com.leinardi.gwe &&
 
-# LAST COMMANDS AND COOLRUNE INSTALL
-7z x coolrune-root.7z -o/ -y && 7z x coolrune-nvidia-patch.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
+# COOLRUNE INSTALL
+7z x coolrune-root.7z -o/ -y && 7z x coolrune-nvidia-patch.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o/boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
 
+# RESETTING PERMISSIONS
 chmod 755 /home/$USER/.librewolf -R &&
-chmod 755 /home/$USER/.config -R &&
-chmod 755 /home/$USER/Desktop/Manual &&
-chmod 755 /home/$USER/.local/share/applications -R &&
-chmod 755 /home/$USER/.local/share/konsole -R &&
-chmod 755 /home/$USER/.local/share/xfce4-panel-profile -R &&
-chmod 755 /home/$USER/.var -R &&
+chmod 777 /home/$USER/.config -R &&
+chmod 777 /home/$USER/Desktop/Manual &&
+chmod 777 /home/$USER/.local/share/applications -R &&
+chmod 777 /home/$USER/.local/share/konsole -R &&
+chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
+chmod 777 /home/$USER/.var -R &&
 
-cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && echo "CoolRune has been successfully installed." && reboot
+# LAST COMMANDS
+cd /home/coolrune-files/files/hardening-script && sh hardening-script.sh && mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 fi
 '
