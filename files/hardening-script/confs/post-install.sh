@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Generate locale and set keyboard layout
-locale-gen
-loadkeys /usr/share/kbd/keymaps/i386/qwerty/uk.map.gz
-mandb --quiet
-
 # Create symlinks for restricted shells
 ln -s /bin/bash /bin/rbash
 ln -s /bin/zsh /bin/rzsh
@@ -18,10 +13,6 @@ chmod 700 /usr/lib/hardening-wrapper/bin/*
 
 # Change default shell to zsh
 chsh -s /bin/zsh
-
-# Rootkit hunter scan and update
-rkhunter -c
-rkhunter --propupd
 
 # AIDE initialization for checksum verification
 echo "Running AIDE initial database creation for checksum verification."
