@@ -44,8 +44,6 @@ PSSH="1000:1023"
 # Uncomment and hardcode static ARP cache entries if necessary
 # $ARP -s IP-ADDRESS MAC-ADDRESS
 
-# Kernel configuration
-
 # Disable IP forwarding temporarily
 echo 1 > /proc/sys/net/ipv4/ip_forward
 echo 0 > /proc/sys/net/ipv4/ip_forward
