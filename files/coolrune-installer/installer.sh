@@ -1,16 +1,5 @@
 #!/bin/sh
 
-# Create cleanup function outside of su command to ensure it runs
-cleanup() {
-    echo "Cleaning up installation files..."
-    rm -rf /home/coolrune-files
-    trap - INT TERM ERR EXIT
-    exit 1
-}
-
-# Set trap before su command
-trap cleanup INT TERM ERR
-
 su -c '
 # COOLRUNE CHOICE SELECTION
 echo "Select a CoolRune Variant"
