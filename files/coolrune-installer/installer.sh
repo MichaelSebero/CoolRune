@@ -31,7 +31,7 @@ flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatp
 7z x coolrune-root.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
 
 # RESETTING PERMISSIONS
-chmod 755 /home/$USER/.librewolf -R &&
+chmod 777 /home/$USER/.librewolf -R &&
 chmod 777 /home/$USER/.config -R &&
 chmod 777 /home/$USER/Desktop/Manual &&
 chmod 777 /home/$USER/.local/share/applications -R &&
@@ -63,7 +63,7 @@ flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatp
 7z x coolrune-root.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
 
 # RESETTING PERMISSIONS
-chmod 755 /home/$USER/.librewolf -R &&
+chmod 777 /home/$USER/.librewolf -R &&
 chmod 777 /home/$USER/.config -R &&
 chmod 777 /home/$USER/Desktop/Manual &&
 chmod 777 /home/$USER/.local/share/applications -R &&
@@ -95,7 +95,7 @@ flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatp
 7z x coolrune-root.7z -o/ -y && 7z x coolrune-nvidia-patch.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
 
 # RESETTING PERMISSIONS
-chmod 755 /home/$USER/.librewolf -R &&
+chmod 777 /home/$USER/.librewolf -R &&
 chmod 777 /home/$USER/.config -R &&
 chmod 777 /home/$USER/Desktop/Manual &&
 chmod 777 /home/$USER/.local/share/applications -R &&
@@ -127,7 +127,7 @@ flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatp
 7z x coolrune-root.7z -o/ -y && 7z x coolrune-nvidia-patch.7z -o/ -y && chattr +i /etc/hosts && s6-service add default apparmor && s6-service add default fail2ban && s6-service add default NetworkManager && s6-service add default dnscrypt-proxy && s6-service add default ufw && rm /etc/s6/adminsv/default/contents.d/connmand && pacman -R --noconfirm connman-s6 connman connman-gtk && s6-db-reload && grub-mkconfig -o /boot/grub/grub.cfg && 7z x coolrune-dotfiles.7z -o/home/$USER -y &&
 
 # RESETTING PERMISSIONS
-chmod 755 /home/$USER/.librewolf -R &&
+chmod 777 /home/$USER/.librewolf -R &&
 chmod 777 /home/$USER/.config -R &&
 chmod 777 /home/$USER/Desktop/Manual &&
 chmod 777 /home/$USER/.local/share/applications -R &&
