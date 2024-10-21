@@ -1,5 +1,6 @@
 #!/bin/bash
 
+su -c '
 # Create symlinks for restricted shells
 ln -s /bin/bash /bin/rbash
 ln -s /bin/zsh /bin/rzsh
@@ -19,3 +20,4 @@ cp /var/lib/aide/aide.db.gz /var/lib/aide/aide.db.initial.gz
 sleep 5
 
 exit 0
+'

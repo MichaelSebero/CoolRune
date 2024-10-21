@@ -1,5 +1,5 @@
 #!/bin/bash
-
+su -c '
 # Set up UFW rules
 ufw limit 22/tcp  
 ufw allow 80/tcp  
@@ -213,3 +213,4 @@ fi
 
 # Set default policy to drop all other traffic
 "$IPTABLES" -A INPUT -j DROPLOG
+'
