@@ -9,15 +9,12 @@ chmod 700 /usr/bin/as
 chmod 700 /usr/bin/gcc
 chmod 700 /usr/bin/g++
 chmod 700 /usr/bin/ld
-chmod 700 /usr/lib/hardening-wrapper/bin/*
 
 # Change default shell to zsh
 chsh -s /bin/zsh
 
 # AIDE initialization for checksum verification
-echo "Running AIDE initial database creation for checksum verification."
 aide -i
-echo "Please backup the following file: /var/lib/aide/aide.db.initial.gz to a safe location not on this system!"
 cp /var/lib/aide/aide.db.gz /var/lib/aide/aide.db.initial.gz
 sleep 5
 
