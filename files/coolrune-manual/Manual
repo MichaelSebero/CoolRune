@@ -39,7 +39,7 @@
 
  - In Konsole there's a list of quick commands provided in [ - Commands - ]
  
- - The command [ post-install ] installs pip dependencies and optional packages for CoolRune, this is useful if you have a laptop.
+ - The command [ install-optional ] installs optional packages for CoolRune, this is useful if you have a laptop.
 
  - To update all of your system's packages at once run the command [ update ]
 
@@ -57,14 +57,12 @@
 
  - Use [ GloriousEggroll ] which is provided with CoolRune as your proton prefix for Steam.
 
- - To get more FPS for games and better visuals copy / paste [ gamemoderun ENABLE_VKBASALT=1 %command% ] in launch options -
+ - To get more FPS for games and better visuals copy & paste [ gamemoderun ENABLE_VKBASALT=1 %command% ] in launch options -
    which is found through properties in Steam.
  
  - CoolRune comes with a customized LibreWolf instance called "Vanguard" which is tweaked to have maximum security.
 
  > https://github.com/MichaelSebero/Vanguard-Browser
-
- - You can tile applications by moving them to the middle left / right, bottom left / right and bottom middle corners.
 
 ..................................................................................................................................................
 
@@ -93,7 +91,9 @@
  
  . pd
 
- - This command searches Pacman, AUR and Flatpak for specific packages based off keywords. 
+ - This command searches Pacman, AUR and Flatpak for specific packages based off keywords.
+ 
+ - Press Q to leave the enviroment
 
 ..................................................................................................................................................
 
@@ -146,14 +146,6 @@
  . p [ DIRECTORY TO .py FILE ]
  
  - Example: p /home/1.py
-
-..................................................................................................................................................
-
- / INSTALL AND UNINSTALL PYTHON MODULES /
-
- . pip [ MODULE ]
-
- . pip-u [ MODULE ]
 
 ..................................................................................................................................................
 
@@ -418,7 +410,7 @@
 
  . privategpt
  
- - This runs PrivateGPT if installed from [ post-install ]
+ - This runs PrivateGPT if installed from [ install-optional ]
  
  - After running the program open up your browser and enter [ localhost:8001 ]
 
@@ -486,7 +478,7 @@
  
  . fix-corrupt
 
- - This command fixes corrupt packages on the system.
+ - This command fixes corrupt packages in the system.
 
 ..................................................................................................................................................
 
@@ -494,7 +486,7 @@
  
  . reinstall-all
 
- - This command reinstalls all packages on the system.
+ - This command reinstalls all packages in the system.
 
 ..................................................................................................................................................
 

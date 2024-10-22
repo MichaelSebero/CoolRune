@@ -37,10 +37,10 @@ if [ "$choice" = "1" ]; then
 killall xfce4-screensaver && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
 
 # REPO PACKAGES REMOVE
-pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
+pacman -Rdd --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv vulkan-intel && 
 
 # REPO PACKAGES INSTALL
-retry_pacman 5 pacman -S --noconfirm --needed --ignore=vlc-git lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 okular dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman bluez-s6 konsole catfish clamav clamav-s6 ark gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 qbittorrent redshift steam lynis sneedacity element-desktop rkhunter paru proton-ge-custom lib32-mesa-tkg-git vulkan-radeon protontricks-git appimagelauncher opendoas linux-cachyos linux-cachyos-headers mate-system-monitor lightdm-gtk-greeter-settings downgrade libreoffice pipewire-pulse pipewire-alsa wireplumber wine-gecko rust python-psutil python-dateutil python-xlib python-pyaudio python-pipenv usbguard usbguard-s6 hunspell-en_us gtk-engine-murrine vkbasalt lib32-vkbasalt chkrootkit testdisk yay python-matplotlib python-tqdm python-pillow python-mutagen wget noto-fonts-emoji tk xfce4-panel-profiles poetry tauon-music-box yt-dlp pyenv lxsession freetube python-magic python-piexif alsa-utils &&
+retry_pacman 5 pacman -S --noconfirm --needed --ignore=vlc,vlc-git lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 okular dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman bluez-s6 konsole catfish clamav clamav-s6 ark gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 qbittorrent redshift steam lynis sneedacity element-desktop rkhunter paru proton-ge-custom lib32-mesa lib32-mesa-utils protontricks-git appimagelauncher opendoas linux-cachyos linux-cachyos-headers mate-system-monitor lightdm-gtk-greeter-settings downgrade libreoffice pipewire-pulse pipewire-alsa wireplumber wine-gecko rust python-psutil python-dateutil python-xlib python-pyaudio python-pipenv usbguard usbguard-s6 hunspell-en_us gtk-engine-murrine vkbasalt lib32-vkbasalt chkrootkit testdisk yay python-matplotlib python-tqdm python-pillow python-mutagen wget noto-fonts-emoji tk xfce4-panel-profiles poetry tauon-music-box yt-dlp pyenv lxsession freetube python-magic python-piexif alsa-utils lib32-vulkan-radeon &&
 
 # FLATPAK PACKAGES
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna &&
@@ -56,6 +56,12 @@ chmod 777 /home/$USER/.local/share/applications -R &&
 chmod 777 /home/$USER/.local/share/konsole -R &&
 chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
 chmod 777 /home/$USER/.var -R &&
+
+# PYTHON PACKAGES
+pip3 install pydub imagehash pyzipper sounddevice tinytag eyed3 futures audioread librosa moviepy brotli websockets --user --break-system-packages --no-warn-script-location
+
+# HARDENING SCRIPT
+cd /-CoolRune-/Programs/Hardening-Script && sh hardening-script.sh && cd &&
 
 # LAST COMMANDS
 mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
@@ -69,10 +75,10 @@ elif [ "$choice" = "2" ]; then
 killall xfce4-screensaver && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
 
 # REPO PACKAGES REMOVE
-pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
+pacman -Rdd --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv vulkan-radeon && 
 
 # REPO PACKAGES INSTALL
-retry_pacman 5 pacman -S --noconfirm --needed --ignore=vlc-git lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 okular dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman bluez-s6 konsole catfish clamav clamav-s6 ark gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 qbittorrent redshift steam lynis sneedacity element-desktop rkhunter paru proton-ge-custom lib32-mesa-tkg-git vulkan-intel protontricks-git appimagelauncher opendoas linux-cachyos linux-cachyos-headers mate-system-monitor lightdm-gtk-greeter-settings downgrade libreoffice pipewire-pulse pipewire-alsa wireplumber wine-gecko rust python-psutil python-dateutil python-xlib python-pyaudio python-pipenv usbguard usbguard-s6 hunspell-en_us gtk-engine-murrine vkbasalt lib32-vkbasalt chkrootkit testdisk yay python-matplotlib python-tqdm python-pillow python-mutagen wget noto-fonts-emoji tk xfce4-panel-profiles poetry tauon-music-box yt-dlp pyenv lxsession freetube python-magic python-piexif alsa-utils &&
+retry_pacman 5 pacman -S --noconfirm --needed --ignore=vlc,vlc-git lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 okular dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman bluez-s6 konsole catfish clamav clamav-s6 ark gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 qbittorrent redshift steam lynis sneedacity element-desktop rkhunter paru proton-ge-custom lib32-mesa lib32-mesa-utils protontricks-git appimagelauncher opendoas linux-cachyos linux-cachyos-headers mate-system-monitor lightdm-gtk-greeter-settings downgrade libreoffice pipewire-pulse pipewire-alsa wireplumber wine-gecko rust python-psutil python-dateutil python-xlib python-pyaudio python-pipenv usbguard usbguard-s6 hunspell-en_us gtk-engine-murrine vkbasalt lib32-vkbasalt chkrootkit testdisk yay python-matplotlib python-tqdm python-pillow python-mutagen wget noto-fonts-emoji tk xfce4-panel-profiles poetry tauon-music-box yt-dlp pyenv lxsession freetube python-magic python-piexif alsa-utils intel-media-driver lib32-vulkan-intel &&
 
 # FLATPAK PACKAGES
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna &&
@@ -89,6 +95,12 @@ chmod 777 /home/$USER/.local/share/konsole -R &&
 chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
 chmod 777 /home/$USER/.var -R &&
 
+# PYTHON PACKAGES
+pip3 install pydub imagehash pyzipper sounddevice tinytag eyed3 futures audioread librosa moviepy brotli websockets --user --break-system-packages --no-warn-script-location
+
+# HARDENING SCRIPT
+cd /-CoolRune-/Programs/Hardening-Script && sh hardening-script.sh && cd &&
+
 # LAST COMMANDS
 mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
 
@@ -101,10 +113,10 @@ elif [ "$choice" = "3" ]; then
 killall xfce4-screensaver && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
 
 # REPO PACKAGES REMOVE
-pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
+pacman -Rdd --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
 
 # REPO PACKAGES INSTALL
-retry_pacman 5 pacman -S --noconfirm --needed --ignore=nvidia-390xx-utils,lib32-nvidia-390xx-utils,vlc-git lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 okular dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman bluez-s6 konsole catfish clamav clamav-s6 ark gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 qbittorrent redshift steam lynis sneedacity element-desktop rkhunter paru proton-ge-custom nvidia-open-dkms nvidia-utils nvidia-utils-s6 lib32-nvidia-utils nvidia-settings protontricks-git appimagelauncher opendoas linux-cachyos linux-cachyos-headers mate-system-monitor lightdm-gtk-greeter-settings downgrade libreoffice pipewire-pulse pipewire-alsa wireplumber wine-gecko rust python-psutil python-dateutil python-xlib python-pyaudio python-pipenv usbguard usbguard-s6 hunspell-en_us gtk-engine-murrine vkbasalt lib32-vkbasalt chkrootkit testdisk yay python-matplotlib python-tqdm python-pillow python-mutagen wget noto-fonts-emoji tk xfce4-panel-profiles poetry tauon-music-box yt-dlp pyenv lxsession freetube python-magic python-piexif alsa-utils &&
+retry_pacman 5 pacman -S --noconfirm --needed --ignore=nvidia-390xx-utils,lib32-nvidia-390xx-utils,vlc,vlc-git lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 okular dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman bluez-s6 konsole catfish clamav clamav-s6 ark gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 qbittorrent redshift steam lynis sneedacity element-desktop rkhunter paru proton-ge-custom nvidia-open-dkms nvidia-utils nvidia-utils-s6 lib32-nvidia-utils nvidia-settings protontricks-git appimagelauncher opendoas linux-cachyos linux-cachyos-headers mate-system-monitor lightdm-gtk-greeter-settings downgrade libreoffice pipewire-pulse pipewire-alsa wireplumber wine-gecko rust python-psutil python-dateutil python-xlib python-pyaudio python-pipenv usbguard usbguard-s6 hunspell-en_us gtk-engine-murrine vkbasalt lib32-vkbasalt chkrootkit testdisk yay python-matplotlib python-tqdm python-pillow python-mutagen wget noto-fonts-emoji tk xfce4-panel-profiles poetry tauon-music-box yt-dlp pyenv lxsession freetube python-magic python-piexif alsa-utils &&
 
 # FLATPAK PACKAGES
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna com.leinardi.gwe &&
@@ -120,6 +132,12 @@ chmod 777 /home/$USER/.local/share/applications -R &&
 chmod 777 /home/$USER/.local/share/konsole -R &&
 chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
 chmod 777 /home/$USER/.var -R &&
+
+# PYTHON PACKAGES
+pip3 install pydub imagehash pyzipper sounddevice tinytag eyed3 futures audioread librosa moviepy brotli websockets --user --break-system-packages --no-warn-script-location
+
+# HARDENING SCRIPT
+cd /-CoolRune-/Programs/Hardening-Script && sh hardening-script.sh && cd &&
 
 # LAST COMMANDS
 mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
@@ -133,10 +151,10 @@ elif [ "$choice" = "4" ]; then
 killall xfce4-screensaver && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm --needed p7zip git && mkdir /home/coolrune-files && git clone https://github.com/MichaelSebero/CoolRune /home/coolrune-files && cd /home/coolrune-files/files/coolrune-packages && 7z e coolrune-pacman-1.7z -o/etc -y && retry_pacman 5 retry_pacman 5 pacman -Sy --noconfirm artix-archlinux-support && pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 3056513887B78AEB && retry_pacman 5 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && 7z e coolrune-pacman-2.7z -o/etc -y && chmod 755 /etc/pacman.conf && pacman-key --populate archlinux artix && retry_pacman 5 retry_pacman 5 pacman -Syyu --noconfirm --needed && mv /home/coolrune-files/files/coolrune-manual/Manual /home/$USER/Desktop &&
 
 # REPO PACKAGES REMOVE
-pacman -R --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
+pacman -Rdd --noconfirm linux linux-headers pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf epiphany xfce4-terminal xfce4-screenshooter parole xfce4-taskmanager mousepad leafpad xfburn ristretto xfce4-appfinder atril artix-branding-base artix-grub-theme xfce4-sensors-plugin xfce4-notes-plugin mpv && 
 
 # REPO PACKAGES INSTALL
-retry_pacman 5 pacman -S --noconfirm --needed --ignore=nvidia-390xx-utils,lib32-nvidia-390xx-utils,vlc-git lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 okular dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman bluez-s6 konsole catfish clamav clamav-s6 ark gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 qbittorrent redshift steam lynis sneedacity element-desktop rkhunter paru proton-ge-custom nvidia-dkms nvidia-utils nvidia-utils-s6 lib32-nvidia-utils nvidia-settings protontricks-git appimagelauncher opendoas linux-cachyos linux-cachyos-headers mate-system-monitor lightdm-gtk-greeter-settings downgrade libreoffice pipewire-pulse pipewire-alsa wireplumber wine-gecko rust python-psutil python-dateutil python-xlib python-pyaudio python-pipenv usbguard usbguard-s6 hunspell-en_us gtk-engine-murrine vkbasalt lib32-vkbasalt chkrootkit testdisk yay python-matplotlib python-tqdm python-pillow python-mutagen wget noto-fonts-emoji tk xfce4-panel-profiles poetry tauon-music-box yt-dlp pyenv lxsession freetube python-magic python-piexif alsa-utils &&
+retry_pacman 5 pacman -S --noconfirm --needed --ignore=nvidia-390xx-utils,lib32-nvidia-390xx-utils,vlc lib32-artix-archlinux-support base-devel flatpak kate librewolf python-pip tmux tealdeer jdownloader2 vulkan-icd-loader lib32-vulkan-icd-loader liferea ksnip kcalc font-manager gwenview gimp gamemode lib32-gamemode fail2ban fail2ban-s6 okular dnscrypt-proxy dnscrypt-proxy-s6 apparmor apparmor-s6 bleachbit blueman bluez-s6 konsole catfish clamav clamav-s6 ark gufw mugshot macchanger networkmanager networkmanager-s6 nm-connection-editor wine-ge-custom wine-mono winetricks ufw-s6 qbittorrent redshift steam lynis sneedacity element-desktop rkhunter paru proton-ge-custom nvidia-dkms nvidia-utils nvidia-utils-s6 lib32-nvidia-utils nvidia-settings protontricks-git appimagelauncher opendoas linux-cachyos linux-cachyos-headers mate-system-monitor lightdm-gtk-greeter-settings downgrade libreoffice pipewire-pulse pipewire-alsa wireplumber wine-gecko rust python-psutil python-dateutil python-xlib python-pyaudio python-pipenv usbguard usbguard-s6 hunspell-en_us gtk-engine-murrine vkbasalt lib32-vkbasalt chkrootkit testdisk yay python-matplotlib python-tqdm python-pillow python-mutagen wget noto-fonts-emoji tk xfce4-panel-profiles poetry tauon-music-box yt-dlp pyenv lxsession freetube python-magic python-piexif alsa-utils &&
 
 # FLATPAK PACKAGES
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo && flatpak install -y org.gnome.seahorse.Application/x86_64/stable org.kde.haruna com.leinardi.gwe &&
@@ -152,6 +170,12 @@ chmod 777 /home/$USER/.local/share/applications -R &&
 chmod 777 /home/$USER/.local/share/konsole -R &&
 chmod 777 /home/$USER/.local/share/xfce4-panel-profile -R &&
 chmod 777 /home/$USER/.var -R &&
+
+# PYTHON PACKAGES
+pip3 install pydub imagehash pyzipper sounddevice tinytag eyed3 futures audioread librosa moviepy brotli websockets --user --break-system-packages --no-warn-script-location
+
+# HARDENING SCRIPT
+cd /-CoolRune-/Programs/Hardening-Script && sh hardening-script.sh && cd &&
 
 # LAST COMMANDS
 mv /etc/profile{,.old} && grub-install && update-grub && rm -rf /home/coolrune-files && echo "CoolRune has been successfully installed." && reboot
