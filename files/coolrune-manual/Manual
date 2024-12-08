@@ -101,7 +101,7 @@
 
  . steal [ PACKAGE ]
  
- - or
+ OR
  
  . steal [URL1] [URL2]
 
@@ -239,7 +239,7 @@
  
  . archivist-tools
  
- - or
+ OR
  
  . change-hash
  
@@ -283,7 +283,7 @@
 
  . document-tools
  
- - or
+ OR
  
  . compare-documents
  
@@ -309,7 +309,7 @@
  
  . media-tools
  
- - or 
+ OR 
  
  . change-volume
  
@@ -764,6 +764,10 @@
  . wine cmd = Wine CMD emulator
 
  . wine regedit = Windows registry edit
+ 
+ OR
+ 
+ . regedit
 
 ..................................................................................................................................................
 
@@ -783,7 +787,7 @@
  
  . anti-virus
  
- - or
+ OR
 
  . doas freshclam - TO UPDATE
 
